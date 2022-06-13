@@ -18,12 +18,12 @@ public:
     void levelUp();
     int getLevel() const;
     void buff(int extraForce);
-    void heal(int extraHP);
+    virtual void heal(int extraHP);
     void damage(int damagedHP);
     bool isKnockedOut() const;
-    void addCoins(int extraCoins);
+    virtual void addCoins(int extraCoins);
     bool pay(int payment);
-    int getAttackStrength() const;
+    virtual int getAttackStrength() const;
 private:
     std::string m_name;
     int m_level;
