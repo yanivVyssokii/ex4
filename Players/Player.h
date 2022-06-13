@@ -13,6 +13,7 @@ public:
     explicit Player(std::string name, int maxHP=100, int force=5);
     Player(const Player& player);
     Player& operator=(const Player& player);
+    friend std::ostream& operator<<(std::ostream& os, const Player& r);
     ~Player();
     void printInfo() const;
     void levelUp();
