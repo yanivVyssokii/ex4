@@ -24,7 +24,7 @@ public:
     virtual void addCoins(int extraCoins);
     bool pay(int payment);
     virtual int getAttackStrength() const;
-    //kk
+    //kkj
 private:
     std::string m_name;
     int m_level;
