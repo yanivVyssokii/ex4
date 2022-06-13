@@ -26,7 +26,7 @@ public:
     bool pay(int payment);
     virtual int getAttackStrength() const;
     //k
-private:
+protected:
     std::string m_name;
     int m_level;
     int m_coins;
