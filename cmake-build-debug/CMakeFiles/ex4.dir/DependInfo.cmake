@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Player.cpp.obj"
   "C:/Users/User/CLionProjects/mtmEx4/ex4/main.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")

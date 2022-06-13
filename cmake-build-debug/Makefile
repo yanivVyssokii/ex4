@@ -118,6 +118,30 @@ ex4\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\build
 .PHONY : ex4\fast
 
+Players\Player.obj: Players\Player.cpp.obj
+.PHONY : Players\Player.obj
+
+# target to build an object file
+Players\Player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Player.cpp.obj
+.PHONY : Players\Player.cpp.obj
+
+Players\Player.i: Players\Player.cpp.i
+.PHONY : Players\Player.i
+
+# target to preprocess a source file
+Players\Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Player.cpp.i
+.PHONY : Players\Player.cpp.i
+
+Players\Player.s: Players\Player.cpp.s
+.PHONY : Players\Player.s
+
+# target to generate assembly for a file
+Players\Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Player.cpp.s
+.PHONY : Players\Player.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -151,6 +175,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ex4
+	@echo ... Players/Player.obj
+	@echo ... Players/Player.i
+	@echo ... Players/Player.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

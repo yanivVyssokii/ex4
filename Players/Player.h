@@ -1,13 +1,11 @@
 //
-// Created by User on 5/7/2022.
+// Created by User on 6/13/2022.
 //
 
-#ifndef EX2MTM_PLAYER_H
-#define EX2MTM_PLAYER_H
-
+#ifndef EX4_PLAYER_H
+#define EX4_PLAYER_H
 #include <cstring>
 #include <string>
-#include "utilities.h"
 
 
 class Player{
@@ -35,4 +33,4 @@ private:
     int m_maxHP;
 };
 
-#endif //EX2MTM_PLAYER_H
+#endif //EX4_PLAYER_H

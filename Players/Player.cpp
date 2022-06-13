@@ -1,17 +1,16 @@
 //
-// Created by User on 5/7/2022.
+// Created by User on 6/13/2022.
 //
 
 #include "Player.h"
-#include "utilities.h"
 #define MAX_LEVEL 10
 
 Player::Player(std::string name, int maxHP, int force):
-    m_level(1),
-    m_coins(0),
-    m_force(force),
-    m_HP(maxHP),
-    m_maxHP(maxHP)
+        m_level(1),
+        m_coins(0),
+        m_force(force),
+        m_HP(maxHP),
+        m_maxHP(maxHP)
 {
     m_name.assign(name);
 }
@@ -114,7 +113,3 @@ int Player::getAttackStrength() const
 {
     return m_level+m_force;
 }
-
-
-
-
