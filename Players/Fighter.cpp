@@ -3,9 +3,9 @@
 //
 
 #include "Fighter.h"
-Figther::Figther(std::string name, int maxHP, int force):Player(name, maxHP, force){
+Fighter::Fighter(std::string name, int maxHP, int force):Player(name, maxHP, force){
 
 }
-int Figther::getAttackStrength() const {
+int Fighter::getAttackStrength() const {
     return m_level+2*m_force;
 }
