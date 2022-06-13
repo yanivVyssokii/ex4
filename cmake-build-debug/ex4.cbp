@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.cpp">
 			<Option target="ex4"/>
 		</Unit>
