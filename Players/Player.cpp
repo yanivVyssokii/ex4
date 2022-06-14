@@ -56,7 +56,7 @@ void Player::printInfo() const
     printPlayerInfo(name,m_level,m_force,m_HP,m_coins);
     delete[] name;
 }
-
+//l
 void Player::levelUp()
 {
     if(m_level<MAX_LEVEL) {

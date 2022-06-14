@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Dragon.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Dragon.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Fairy.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Fairy.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Goblin.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj"
+  "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Merchant.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Pitfall.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Treasure.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Treasure.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Vampire.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj"
