@@ -8,7 +8,12 @@
 #include "Card.h"
 
 class BattleCard: public Card{
-    BattleCard()
+    BattleCard(CardType type, int force, int damage, int loot);
+
+private:
+    int force;
+    int damage;
+    int loot;
 };
 
 #endif //EX4_BATTLECARD_H

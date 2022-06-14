@@ -38,7 +38,7 @@ public:
      * @return
      *      void
     */
-    void applyEncounter(Player& player) const;
+    virtual void applyEncounter(Player& player) const = 0;
 
 
     /*
@@ -63,6 +63,7 @@ public:
 
 private:
     CardType m_type;
+    std::string name;
 
 };
 
