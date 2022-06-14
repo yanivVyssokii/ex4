@@ -7,3 +7,4 @@ Dragon::Dragon() : BattleCard(CardType::Battle, 25, std::numeric_limits<int>::in
 {
     m_name.assign("Dragon");
 }
+//

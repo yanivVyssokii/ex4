@@ -10,5 +10,5 @@ class Dragon:public BattleCard{
 public:
     Dragon();
 };
-
+//
 #endif //EX4_DRAGON_H
