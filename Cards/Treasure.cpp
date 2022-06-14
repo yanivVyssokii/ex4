@@ -6,3 +6,8 @@
 
 Treasure::Treasure():Card(CardType::Treasure),m_loot(10)
 {}
+
+void Treasure::applyEncounter (Player&player) const {
+    player.addCoins(m_loot);
+    printTreasureMessage();
+}
