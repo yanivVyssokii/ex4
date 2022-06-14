@@ -118,6 +118,30 @@ ex4\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\build
 .PHONY : ex4\fast
 
+Cards\BattleCard.obj: Cards\BattleCard.cpp.obj
+.PHONY : Cards\BattleCard.obj
+
+# target to build an object file
+Cards\BattleCard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\BattleCard.cpp.obj
+.PHONY : Cards\BattleCard.cpp.obj
+
+Cards\BattleCard.i: Cards\BattleCard.cpp.i
+.PHONY : Cards\BattleCard.i
+
+# target to preprocess a source file
+Cards\BattleCard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\BattleCard.cpp.i
+.PHONY : Cards\BattleCard.cpp.i
+
+Cards\BattleCard.s: Cards\BattleCard.cpp.s
+.PHONY : Cards\BattleCard.s
+
+# target to generate assembly for a file
+Cards\BattleCard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\BattleCard.cpp.s
+.PHONY : Cards\BattleCard.cpp.s
+
 Cards\Card.obj: Cards\Card.cpp.obj
 .PHONY : Cards\Card.obj
 
@@ -271,6 +295,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ex4
+	@echo ... Cards/BattleCard.obj
+	@echo ... Cards/BattleCard.i
+	@echo ... Cards/BattleCard.s
 	@echo ... Cards/Card.obj
 	@echo ... Cards/Card.i
 	@echo ... Cards/Card.s

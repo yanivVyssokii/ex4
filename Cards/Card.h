@@ -16,7 +16,7 @@
  *  HEAL - Increase your player's HP by 'm_heal' points  of CardStats (no more than maxHP points).
  *  TREASURE - Get 'm_profit' coins of CardStats.
 */
-enum class CardType {Battle, Buff, Heal, Treasure}; // The type of the Card
+enum class CardType {Battle, Merchant, Pitfall, Treasure, Barfight, Fairy}; // The type of the Card
 
 class Card {
 public:
@@ -28,7 +28,7 @@ public:
      * @return
      *      A new instance of Card.
     */
-    Card(CardType type, const CardStats& stats);
+    Card(CardType type);
 
 
     /*
@@ -50,10 +50,7 @@ public:
     void printInfo() const;
 
 
-    /*
-     * C'tor to the "default card" - Treasure card that gives 0 coins
-    */
-    Card(): m_effect(CardType::Treasure), m_stats() {}
+
 
 
     /*
@@ -65,8 +62,7 @@ public:
 
 
 private:
-    CardType m_effect;
-    CardStats m_stats;
+    CardType m_typet;
 
 };
 
