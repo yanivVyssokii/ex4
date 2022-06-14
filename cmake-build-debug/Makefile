@@ -166,29 +166,53 @@ Cards\Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Card.cpp.s
 .PHONY : Cards\Card.cpp.s
 
-Cards\Goblin.obj: Cards\Goblin.cpp.obj
-.PHONY : Cards\Goblin.obj
+Cards\Fairy.obj: Cards\Fairy.cpp.obj
+.PHONY : Cards\Fairy.obj
 
 # target to build an object file
-Cards\Goblin.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Goblin.cpp.obj
-.PHONY : Cards\Goblin.cpp.obj
+Cards\Fairy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Fairy.cpp.obj
+.PHONY : Cards\Fairy.cpp.obj
 
-Cards\Goblin.i: Cards\Goblin.cpp.i
-.PHONY : Cards\Goblin.i
+Cards\Fairy.i: Cards\Fairy.cpp.i
+.PHONY : Cards\Fairy.i
 
 # target to preprocess a source file
-Cards\Goblin.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Goblin.cpp.i
-.PHONY : Cards\Goblin.cpp.i
+Cards\Fairy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Fairy.cpp.i
+.PHONY : Cards\Fairy.cpp.i
 
-Cards\Goblin.s: Cards\Goblin.cpp.s
-.PHONY : Cards\Goblin.s
+Cards\Fairy.s: Cards\Fairy.cpp.s
+.PHONY : Cards\Fairy.s
 
 # target to generate assembly for a file
-Cards\Goblin.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Goblin.cpp.s
-.PHONY : Cards\Goblin.cpp.s
+Cards\Fairy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Fairy.cpp.s
+.PHONY : Cards\Fairy.cpp.s
+
+Cards\Vampire.obj: Cards\Vampire.cpp.obj
+.PHONY : Cards\Vampire.obj
+
+# target to build an object file
+Cards\Vampire.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Vampire.cpp.obj
+.PHONY : Cards\Vampire.cpp.obj
+
+Cards\Vampire.i: Cards\Vampire.cpp.i
+.PHONY : Cards\Vampire.i
+
+# target to preprocess a source file
+Cards\Vampire.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Vampire.cpp.i
+.PHONY : Cards\Vampire.cpp.i
+
+Cards\Vampire.s: Cards\Vampire.cpp.s
+.PHONY : Cards\Vampire.s
+
+# target to generate assembly for a file
+Cards\Vampire.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Vampire.cpp.s
+.PHONY : Cards\Vampire.cpp.s
 
 Players\Fighter.obj: Players\Fighter.cpp.obj
 .PHONY : Players\Fighter.obj
@@ -325,9 +349,12 @@ help:
 	@echo ... Cards/Card.obj
 	@echo ... Cards/Card.i
 	@echo ... Cards/Card.s
-	@echo ... Cards/Goblin.obj
-	@echo ... Cards/Goblin.i
-	@echo ... Cards/Goblin.s
+	@echo ... Cards/Fairy.obj
+	@echo ... Cards/Fairy.i
+	@echo ... Cards/Fairy.s
+	@echo ... Cards/Vampire.obj
+	@echo ... Cards/Vampire.i
+	@echo ... Cards/Vampire.s
 	@echo ... Players/Fighter.obj
 	@echo ... Players/Fighter.i
 	@echo ... Players/Fighter.s

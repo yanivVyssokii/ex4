@@ -94,10 +94,16 @@
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.h">
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Fighter.cpp">
