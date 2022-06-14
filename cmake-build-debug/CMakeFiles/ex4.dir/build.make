@@ -188,23 +188,42 @@ CMakeFiles\ex4.dir\Cards\BattleCard.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ex4.dir\Cards\BattleCard.cpp.s /c C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\BattleCard.cpp
 <<
 
-CMakeFiles\ex4.dir\Cards\Goblin.cpp.obj: CMakeFiles\ex4.dir\flags.make
-CMakeFiles\ex4.dir\Cards\Goblin.cpp.obj: ..\Cards\Goblin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj"
+CMakeFiles\ex4.dir\Cards\Vampire.cpp.obj: CMakeFiles\ex4.dir\flags.make
+CMakeFiles\ex4.dir\Cards\Vampire.cpp.obj: ..\Cards\Vampire.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj"
 	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ex4.dir\Cards\Goblin.cpp.obj /FdCMakeFiles\ex4.dir\ /FS -c C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\Goblin.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ex4.dir\Cards\Vampire.cpp.obj /FdCMakeFiles\ex4.dir\ /FS -c C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\Vampire.cpp
 <<
 
-CMakeFiles\ex4.dir\Cards\Goblin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Cards/Goblin.cpp.i"
-	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\ex4.dir\Cards\Goblin.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\Goblin.cpp
+CMakeFiles\ex4.dir\Cards\Vampire.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Cards/Vampire.cpp.i"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\ex4.dir\Cards\Vampire.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\Vampire.cpp
 <<
 
-CMakeFiles\ex4.dir\Cards\Goblin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Cards/Goblin.cpp.s"
+CMakeFiles\ex4.dir\Cards\Vampire.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Cards/Vampire.cpp.s"
 	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ex4.dir\Cards\Goblin.cpp.s /c C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\Goblin.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ex4.dir\Cards\Vampire.cpp.s /c C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\Vampire.cpp
+<<
+
+CMakeFiles\ex4.dir\Cards\Fairy.cpp.obj: CMakeFiles\ex4.dir\flags.make
+CMakeFiles\ex4.dir\Cards\Fairy.cpp.obj: ..\Cards\Fairy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ex4.dir/Cards/Fairy.cpp.obj"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ex4.dir\Cards\Fairy.cpp.obj /FdCMakeFiles\ex4.dir\ /FS -c C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\Fairy.cpp
+<<
+
+CMakeFiles\ex4.dir\Cards\Fairy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Cards/Fairy.cpp.i"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\ex4.dir\Cards\Fairy.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\Fairy.cpp
+<<
+
+CMakeFiles\ex4.dir\Cards\Fairy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Cards/Fairy.cpp.s"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ex4.dir\Cards\Fairy.cpp.s /c C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\Fairy.cpp
 <<
 
 # Object files for target ex4
@@ -216,7 +235,8 @@ ex4_OBJECTS = \
 "CMakeFiles\ex4.dir\Players\Wizard.cpp.obj" \
 "CMakeFiles\ex4.dir\Players\Fighter.cpp.obj" \
 "CMakeFiles\ex4.dir\Cards\BattleCard.cpp.obj" \
-"CMakeFiles\ex4.dir\Cards\Goblin.cpp.obj"
+"CMakeFiles\ex4.dir\Cards\Vampire.cpp.obj" \
+"CMakeFiles\ex4.dir\Cards\Fairy.cpp.obj"
 
 # External object files for target ex4
 ex4_EXTERNAL_OBJECTS =
@@ -228,10 +248,11 @@ ex4.exe: CMakeFiles\ex4.dir\Players\Rouge.cpp.obj
 ex4.exe: CMakeFiles\ex4.dir\Players\Wizard.cpp.obj
 ex4.exe: CMakeFiles\ex4.dir\Players\Fighter.cpp.obj
 ex4.exe: CMakeFiles\ex4.dir\Cards\BattleCard.cpp.obj
-ex4.exe: CMakeFiles\ex4.dir\Cards\Goblin.cpp.obj
+ex4.exe: CMakeFiles\ex4.dir\Cards\Vampire.cpp.obj
+ex4.exe: CMakeFiles\ex4.dir\Cards\Fairy.cpp.obj
 ex4.exe: CMakeFiles\ex4.dir\build.make
 ex4.exe: CMakeFiles\ex4.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ex4.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ex4.exe"
 	"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\ex4.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\ex4.dir\objects1.rsp @<<
  /out:ex4.exe /implib:ex4.lib /pdb:C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\ex4.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
