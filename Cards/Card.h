@@ -62,7 +62,7 @@ public:
 
 
 private:
-    CardType m_typet;
+    CardType m_type;
 
 };
 
