@@ -6,3 +6,9 @@
 
 Fairy::Fairy(): Card(CardType::Fairy),m_bonusHP(10)
 {}
+
+void Fairy::applyEncounter(Player &player) const {
+    if (player.getJob()==std::string("Wizard")){
+        player.heal(m_bonusHP);
+    }
+}

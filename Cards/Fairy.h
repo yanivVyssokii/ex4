@@ -9,8 +9,8 @@
 
 class Fairy:public Card{
 public:
-     Fairy();
-
+    Fairy();
+    void applyEncounter(Player& player) const override;
 private:
     int m_bonusHP;
 
