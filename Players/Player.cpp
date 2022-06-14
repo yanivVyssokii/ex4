@@ -5,7 +5,7 @@
 #include "Player.h"
 #define MAX_LEVEL 10
 
-Player::Player(std::string name, int maxHP, int force):
+Player::Player(std::string name,std::string job, int maxHP, int force):
         m_level(1),
         m_coins(0),
         m_force(force),
@@ -13,6 +13,7 @@ Player::Player(std::string name, int maxHP, int force):
         m_maxHP(maxHP)
 {
     m_name.assign(name);
+    m_job.assign(job);
 }
 
 Player::Player(const Player &player)
@@ -23,6 +24,7 @@ Player::Player(const Player &player)
     m_level=player.m_level;
     m_coins=player.m_coins;
     m_name.assign(player.m_name);
+    m_job.assign(player.m_job);
 }
 
 Player &Player::operator=(const Player &player){
@@ -30,6 +32,7 @@ Player &Player::operator=(const Player &player){
         return *this;
     }
     m_name.assign(player.m_name);
+    m_job.assign(player.m_job);
     m_HP=player.m_HP;
     m_maxHP=player.m_maxHP;
     m_level=player.m_level;
@@ -48,6 +51,7 @@ void Player::printInfo() const
 {
     char* name=new char[m_name.length()+1];
     strcpy(name,m_name.c_str());
+    //strcpy(job,m_job.c_str());
     printPlayerInfo(name,m_level,m_force,m_HP,m_coins);
     delete[] name;
 }
