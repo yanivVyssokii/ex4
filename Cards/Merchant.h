@@ -9,6 +9,7 @@
 class Merchant:public Card{
 public:
     Merchant();
+    void applyEncounter(Player& player) const override;
 
 private:
     int m_HpPrice;

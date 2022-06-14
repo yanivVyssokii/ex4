@@ -238,6 +238,54 @@ Cards\Fairy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Fairy.cpp.s
 .PHONY : Cards\Fairy.cpp.s
 
+Cards\Goblin.obj: Cards\Goblin.cpp.obj
+.PHONY : Cards\Goblin.obj
+
+# target to build an object file
+Cards\Goblin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Goblin.cpp.obj
+.PHONY : Cards\Goblin.cpp.obj
+
+Cards\Goblin.i: Cards\Goblin.cpp.i
+.PHONY : Cards\Goblin.i
+
+# target to preprocess a source file
+Cards\Goblin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Goblin.cpp.i
+.PHONY : Cards\Goblin.cpp.i
+
+Cards\Goblin.s: Cards\Goblin.cpp.s
+.PHONY : Cards\Goblin.s
+
+# target to generate assembly for a file
+Cards\Goblin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Goblin.cpp.s
+.PHONY : Cards\Goblin.cpp.s
+
+Cards\Merchant.obj: Cards\Merchant.cpp.obj
+.PHONY : Cards\Merchant.obj
+
+# target to build an object file
+Cards\Merchant.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Merchant.cpp.obj
+.PHONY : Cards\Merchant.cpp.obj
+
+Cards\Merchant.i: Cards\Merchant.cpp.i
+.PHONY : Cards\Merchant.i
+
+# target to preprocess a source file
+Cards\Merchant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Merchant.cpp.i
+.PHONY : Cards\Merchant.cpp.i
+
+Cards\Merchant.s: Cards\Merchant.cpp.s
+.PHONY : Cards\Merchant.s
+
+# target to generate assembly for a file
+Cards\Merchant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Merchant.cpp.s
+.PHONY : Cards\Merchant.cpp.s
+
 Cards\Pitfall.obj: Cards\Pitfall.cpp.obj
 .PHONY : Cards\Pitfall.obj
 
@@ -454,6 +502,12 @@ help:
 	@echo ... Cards/Fairy.obj
 	@echo ... Cards/Fairy.i
 	@echo ... Cards/Fairy.s
+	@echo ... Cards/Goblin.obj
+	@echo ... Cards/Goblin.i
+	@echo ... Cards/Goblin.s
+	@echo ... Cards/Merchant.obj
+	@echo ... Cards/Merchant.i
+	@echo ... Cards/Merchant.s
 	@echo ... Cards/Pitfall.obj
 	@echo ... Cards/Pitfall.i
 	@echo ... Cards/Pitfall.s
