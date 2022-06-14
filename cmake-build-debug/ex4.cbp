@@ -94,6 +94,12 @@
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Fighter.cpp">
 			<Option target="ex4"/>
 		</Unit>

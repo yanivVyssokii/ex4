@@ -61,9 +61,9 @@ public:
     Card& operator=(const Card& other) = default;
 
 
-private:
+protected:
     CardType m_type;
-    std::string name;
+    std::string m_name;
 
 };
 
