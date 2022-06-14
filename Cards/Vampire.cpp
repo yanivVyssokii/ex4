@@ -8,4 +8,3 @@ Vampire::Vampire(): BattleCard(CardType::Battle,10,10,2)
 {
     m_name.assign("Vampire");
 }
-//l
