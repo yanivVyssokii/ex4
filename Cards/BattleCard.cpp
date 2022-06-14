@@ -16,6 +16,7 @@ void BattleCard::applyEncounter (Player&player) const {
     {
         player.buff(1);
         player.addCoins(m_loot);
+        printWinBattle()
     }
     else{
         player.damage(m_damage);

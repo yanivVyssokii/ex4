@@ -113,10 +113,14 @@ bool Player::pay(int payment)
 }
 
 
-
 int Player::getAttackStrength() const
 {
     return m_level+m_force;
+}
+
+std::string Player::getName()const
+{
+    return m_name;
 }
 
 std::ostream & operator<<(std::ostream& os, const Player& p){

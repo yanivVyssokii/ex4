@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Barfight.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Barfight.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/BattleCard.cpp">
 			<Option target="ex4"/>
 		</Unit>
@@ -100,16 +106,28 @@
 		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Dragon.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Merchant.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Fairy.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Merchant.h">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Fairy.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Goblin.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Goblin.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Pitfall.cpp">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Pitfall.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Treasure.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Treasure.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Vampire.cpp">
