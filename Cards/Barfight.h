@@ -10,6 +10,7 @@
 class Barfight:public Card{
 public:
     Barfight();
+    void applyEncounter(Player& player) const override;
 
 private:
     int m_damage;

@@ -17,6 +17,7 @@ public:
     ~Player();
     void printInfo() const;
     void levelUp();
+    std::string getJob() const;
     int getLevel() const;
     void buff(int extraForce);
     virtual void heal(int extraHP);
