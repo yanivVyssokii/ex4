@@ -3,6 +3,7 @@
 //
 
 #include "Player.h"
+#include "../utilities.h"
 #define MAX_LEVEL 10
 
 Player::Player(std::string name,std::string job, int maxHP, int force):
@@ -117,3 +118,11 @@ int Player::getAttackStrength() const
 {
     return m_level+m_force;
 }
+
+std::ostream & operator<<(std::ostream& os, const Player& p){
+    printPlayerDetails(os,p.m_name,p.m_job,p.m_level,p.m_force,p.m_HP,p.m_coins);
+
+    return os;
+
+}
+//std::ostream &os, const std::string &name, const std::string &job, int level, int force, int HP, int coins);
