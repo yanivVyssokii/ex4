@@ -11,7 +11,7 @@ class Fairy:public Card{
 public:
      Fairy();
 
-protected:
+private:
     int m_bonusHP;
 
 };

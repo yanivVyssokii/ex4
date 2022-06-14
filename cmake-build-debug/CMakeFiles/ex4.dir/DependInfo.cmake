@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Barfight.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Barfight.cpp.obj"
   "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/BattleCard.cpp.obj"
   "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Card.cpp.obj"
   "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Fairy.cpp.obj"
