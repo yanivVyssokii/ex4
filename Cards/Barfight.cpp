@@ -8,5 +8,7 @@ Barfight::Barfight(): Card(CardType::Barfight),m_damage(10)
 {}
 
 void Barfight::applyEncounter(Player &player) const {
-    if (player.getJob()==std::string(""))
+    if (player.getJob()!=std::string("Fighter")){
+        player.damage(this->m_damage);
+    }
 }
