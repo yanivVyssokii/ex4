@@ -142,6 +142,30 @@ Cards\Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Card.cpp.s
 .PHONY : Cards\Card.cpp.s
 
+Players\Fighter.obj: Players\Fighter.cpp.obj
+.PHONY : Players\Fighter.obj
+
+# target to build an object file
+Players\Fighter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Fighter.cpp.obj
+.PHONY : Players\Fighter.cpp.obj
+
+Players\Fighter.i: Players\Fighter.cpp.i
+.PHONY : Players\Fighter.i
+
+# target to preprocess a source file
+Players\Fighter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Fighter.cpp.i
+.PHONY : Players\Fighter.cpp.i
+
+Players\Fighter.s: Players\Fighter.cpp.s
+.PHONY : Players\Fighter.s
+
+# target to generate assembly for a file
+Players\Fighter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Fighter.cpp.s
+.PHONY : Players\Fighter.cpp.s
+
 Players\Player.obj: Players\Player.cpp.obj
 .PHONY : Players\Player.obj
 
@@ -165,6 +189,54 @@ Players\Player.s: Players\Player.cpp.s
 Players\Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Player.cpp.s
 .PHONY : Players\Player.cpp.s
+
+Players\Rouge.obj: Players\Rouge.cpp.obj
+.PHONY : Players\Rouge.obj
+
+# target to build an object file
+Players\Rouge.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Rouge.cpp.obj
+.PHONY : Players\Rouge.cpp.obj
+
+Players\Rouge.i: Players\Rouge.cpp.i
+.PHONY : Players\Rouge.i
+
+# target to preprocess a source file
+Players\Rouge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Rouge.cpp.i
+.PHONY : Players\Rouge.cpp.i
+
+Players\Rouge.s: Players\Rouge.cpp.s
+.PHONY : Players\Rouge.s
+
+# target to generate assembly for a file
+Players\Rouge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Rouge.cpp.s
+.PHONY : Players\Rouge.cpp.s
+
+Players\Wizard.obj: Players\Wizard.cpp.obj
+.PHONY : Players\Wizard.obj
+
+# target to build an object file
+Players\Wizard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Wizard.cpp.obj
+.PHONY : Players\Wizard.cpp.obj
+
+Players\Wizard.i: Players\Wizard.cpp.i
+.PHONY : Players\Wizard.i
+
+# target to preprocess a source file
+Players\Wizard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Wizard.cpp.i
+.PHONY : Players\Wizard.cpp.i
+
+Players\Wizard.s: Players\Wizard.cpp.s
+.PHONY : Players\Wizard.s
+
+# target to generate assembly for a file
+Players\Wizard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Wizard.cpp.s
+.PHONY : Players\Wizard.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -202,9 +274,18 @@ help:
 	@echo ... Cards/Card.obj
 	@echo ... Cards/Card.i
 	@echo ... Cards/Card.s
+	@echo ... Players/Fighter.obj
+	@echo ... Players/Fighter.i
+	@echo ... Players/Fighter.s
 	@echo ... Players/Player.obj
 	@echo ... Players/Player.i
 	@echo ... Players/Player.s
+	@echo ... Players/Rouge.obj
+	@echo ... Players/Rouge.i
+	@echo ... Players/Rouge.s
+	@echo ... Players/Wizard.obj
+	@echo ... Players/Wizard.i
+	@echo ... Players/Wizard.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -6,7 +6,7 @@
 #define EX4_WIZARD_H
 #include "Player.h"
 class Wizard:public Player{
-    explicit Wizard(std::string name, int maxHP=100, int force=5);
+    explicit Wizard(std::string name, std::string job, int maxHP=100, int force=5);
     void heal(int extraHP) override;
 };
 

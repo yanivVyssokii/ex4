@@ -8,7 +8,7 @@
 
 class Rouge:public Player
 {
-    explicit Rouge(std::string name, int maxHP=100, int force=5);
+    explicit Rouge(std::string name, std::string job, int maxHP=100, int force=5);
     void addCoins(int extraCoins) override;
 };
 #endif //EX4_ROUGE_H

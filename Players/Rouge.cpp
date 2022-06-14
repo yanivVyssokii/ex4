@@ -4,7 +4,7 @@
 
 #include "Rouge.h"
 
-Rouge::Rouge(std::string name, int maxHP, int force):Player(name, maxHP, force){
+Rouge::Rouge(std::string name, std::string job, int maxHP, int force):Player(name, job, maxHP, force){
 
 }
 
