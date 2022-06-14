@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug"/>
+				<Option working_dir="C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex4">
-				<Option output="C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/ex4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug"/>
+				<Option output="C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/ex4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -33,15 +33,15 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 ex4"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 ex4"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex4/fast">
-				<Option output="C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/ex4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug"/>
+				<Option output="C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/ex4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -55,91 +55,91 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 ex4/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 ex4/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug"/>
+				<Option working_dir="C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug"/>
+				<Option working_dir="C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Barfight.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/BattleCard.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Barfight.h">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/BattleCard.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Card.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.h">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Card.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Dragon.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Dragon.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Pitfall.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.h">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Pitfall.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Vampire.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Vampire.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Fighter.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Players/Fighter.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Fighter.h">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Players/Fighter.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Players/Player.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Players/Player.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Rouge.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Players/Rouge.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Rouge.h">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Players/Rouge.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Wizard.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Players/Wizard.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Wizard.h">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Players/Wizard.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/main.cpp">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/main.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/CMakeLists.txt">
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

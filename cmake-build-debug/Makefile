@@ -46,10 +46,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\User\CLionProjects\mtmEx4\ex4
+CMAKE_SOURCE_DIR = C:\Users\idanh\CLionProjects\EX4\ex4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,9 +76,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\CMakeFiles C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -190,29 +190,29 @@ Cards\Dragon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Dragon.cpp.s
 .PHONY : Cards\Dragon.cpp.s
 
-Cards\Treasure.obj: Cards\Treasure.cpp.obj
-.PHONY : Cards\Treasure.obj
+Cards\Pitfall.obj: Cards\Pitfall.cpp.obj
+.PHONY : Cards\Pitfall.obj
 
 # target to build an object file
-Cards\Treasure.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Treasure.cpp.obj
-.PHONY : Cards\Treasure.cpp.obj
+Cards\Pitfall.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Pitfall.cpp.obj
+.PHONY : Cards\Pitfall.cpp.obj
 
-Cards\Treasure.i: Cards\Treasure.cpp.i
-.PHONY : Cards\Treasure.i
+Cards\Pitfall.i: Cards\Pitfall.cpp.i
+.PHONY : Cards\Pitfall.i
 
 # target to preprocess a source file
-Cards\Treasure.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Treasure.cpp.i
-.PHONY : Cards\Treasure.cpp.i
+Cards\Pitfall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Pitfall.cpp.i
+.PHONY : Cards\Pitfall.cpp.i
 
-Cards\Treasure.s: Cards\Treasure.cpp.s
-.PHONY : Cards\Treasure.s
+Cards\Pitfall.s: Cards\Pitfall.cpp.s
+.PHONY : Cards\Pitfall.s
 
 # target to generate assembly for a file
-Cards\Treasure.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Treasure.cpp.s
-.PHONY : Cards\Treasure.cpp.s
+Cards\Pitfall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Pitfall.cpp.s
+.PHONY : Cards\Pitfall.cpp.s
 
 Cards\Vampire.obj: Cards\Vampire.cpp.obj
 .PHONY : Cards\Vampire.obj
@@ -376,9 +376,9 @@ help:
 	@echo ... Cards/Dragon.obj
 	@echo ... Cards/Dragon.i
 	@echo ... Cards/Dragon.s
-	@echo ... Cards/Treasure.obj
-	@echo ... Cards/Treasure.i
-	@echo ... Cards/Treasure.s
+	@echo ... Cards/Pitfall.obj
+	@echo ... Cards/Pitfall.i
+	@echo ... Cards/Pitfall.s
 	@echo ... Cards/Vampire.obj
 	@echo ... Cards/Vampire.i
 	@echo ... Cards/Vampire.s
