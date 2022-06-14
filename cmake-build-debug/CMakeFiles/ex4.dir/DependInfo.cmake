@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/BattleCard.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/BattleCard.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Card.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Card.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Dragon.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Dragon.cpp.obj"
+  "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Pitfall.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Vampire.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Players/Fighter.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Fighter.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Players/Player.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Player.cpp.obj"
