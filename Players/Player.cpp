@@ -125,4 +125,8 @@ std::ostream & operator<<(std::ostream& os, const Player& p){
     return os;
 
 }
+
+std::string Player::getJob() const {
+    return m_job;
+}
 //std::ostream &os, const std::string &name, const std::string &job, int level, int force, int HP, int coins);

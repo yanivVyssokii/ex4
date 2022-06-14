@@ -1,3 +1,3 @@
-C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir
-C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir
+C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
