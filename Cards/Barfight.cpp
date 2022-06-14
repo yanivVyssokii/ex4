@@ -11,4 +11,5 @@ void Barfight::applyEncounter(Player &player) const {
     if (player.getJob()!=std::string("Fighter")){
         player.damage(this->m_damage);
     }
+    printBarfightMessage(player.getJob()!=std::string("Fighter"));
 }
