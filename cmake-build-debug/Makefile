@@ -118,30 +118,6 @@ ex4\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\build
 .PHONY : ex4\fast
 
-Cards\Barfight.obj: Cards\Barfight.cpp.obj
-.PHONY : Cards\Barfight.obj
-
-# target to build an object file
-Cards\Barfight.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Barfight.cpp.obj
-.PHONY : Cards\Barfight.cpp.obj
-
-Cards\Barfight.i: Cards\Barfight.cpp.i
-.PHONY : Cards\Barfight.i
-
-# target to preprocess a source file
-Cards\Barfight.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Barfight.cpp.i
-.PHONY : Cards\Barfight.cpp.i
-
-Cards\Barfight.s: Cards\Barfight.cpp.s
-.PHONY : Cards\Barfight.s
-
-# target to generate assembly for a file
-Cards\Barfight.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Barfight.cpp.s
-.PHONY : Cards\Barfight.cpp.s
-
 Cards\BattleCard.obj: Cards\BattleCard.cpp.obj
 .PHONY : Cards\BattleCard.obj
 
@@ -190,29 +166,53 @@ Cards\Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Card.cpp.s
 .PHONY : Cards\Card.cpp.s
 
-Cards\Fairy.obj: Cards\Fairy.cpp.obj
-.PHONY : Cards\Fairy.obj
+Cards\Dragon.obj: Cards\Dragon.cpp.obj
+.PHONY : Cards\Dragon.obj
 
 # target to build an object file
-Cards\Fairy.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Fairy.cpp.obj
-.PHONY : Cards\Fairy.cpp.obj
+Cards\Dragon.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Dragon.cpp.obj
+.PHONY : Cards\Dragon.cpp.obj
 
-Cards\Fairy.i: Cards\Fairy.cpp.i
-.PHONY : Cards\Fairy.i
+Cards\Dragon.i: Cards\Dragon.cpp.i
+.PHONY : Cards\Dragon.i
 
 # target to preprocess a source file
-Cards\Fairy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Fairy.cpp.i
-.PHONY : Cards\Fairy.cpp.i
+Cards\Dragon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Dragon.cpp.i
+.PHONY : Cards\Dragon.cpp.i
 
-Cards\Fairy.s: Cards\Fairy.cpp.s
-.PHONY : Cards\Fairy.s
+Cards\Dragon.s: Cards\Dragon.cpp.s
+.PHONY : Cards\Dragon.s
 
 # target to generate assembly for a file
-Cards\Fairy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Fairy.cpp.s
-.PHONY : Cards\Fairy.cpp.s
+Cards\Dragon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Dragon.cpp.s
+.PHONY : Cards\Dragon.cpp.s
+
+Cards\Treasure.obj: Cards\Treasure.cpp.obj
+.PHONY : Cards\Treasure.obj
+
+# target to build an object file
+Cards\Treasure.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Treasure.cpp.obj
+.PHONY : Cards\Treasure.cpp.obj
+
+Cards\Treasure.i: Cards\Treasure.cpp.i
+.PHONY : Cards\Treasure.i
+
+# target to preprocess a source file
+Cards\Treasure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Treasure.cpp.i
+.PHONY : Cards\Treasure.cpp.i
+
+Cards\Treasure.s: Cards\Treasure.cpp.s
+.PHONY : Cards\Treasure.s
+
+# target to generate assembly for a file
+Cards\Treasure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Treasure.cpp.s
+.PHONY : Cards\Treasure.cpp.s
 
 Cards\Vampire.obj: Cards\Vampire.cpp.obj
 .PHONY : Cards\Vampire.obj
@@ -367,18 +367,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ex4
-	@echo ... Cards/Barfight.obj
-	@echo ... Cards/Barfight.i
-	@echo ... Cards/Barfight.s
 	@echo ... Cards/BattleCard.obj
 	@echo ... Cards/BattleCard.i
 	@echo ... Cards/BattleCard.s
 	@echo ... Cards/Card.obj
 	@echo ... Cards/Card.i
 	@echo ... Cards/Card.s
-	@echo ... Cards/Fairy.obj
-	@echo ... Cards/Fairy.i
-	@echo ... Cards/Fairy.s
+	@echo ... Cards/Dragon.obj
+	@echo ... Cards/Dragon.i
+	@echo ... Cards/Dragon.s
+	@echo ... Cards/Treasure.obj
+	@echo ... Cards/Treasure.i
+	@echo ... Cards/Treasure.s
 	@echo ... Cards/Vampire.obj
 	@echo ... Cards/Vampire.i
 	@echo ... Cards/Vampire.s
