@@ -10,5 +10,5 @@ class Vampire:public BattleCard{
     Vampire();
 };
 
-
+//g
 #endif //EX4_VAMPIRE_H
