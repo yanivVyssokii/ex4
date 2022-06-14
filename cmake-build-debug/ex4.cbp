@@ -100,6 +100,12 @@
 		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Dragon.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Merchant.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Merchant.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="C:/Users/idanh/CLionProjects/EX4/ex4/Cards/Pitfall.cpp">
 			<Option target="ex4"/>
 		</Unit>

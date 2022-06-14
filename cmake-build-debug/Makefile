@@ -190,6 +190,30 @@ Cards\Dragon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Dragon.cpp.s
 .PHONY : Cards\Dragon.cpp.s
 
+Cards\Merchant.obj: Cards\Merchant.cpp.obj
+.PHONY : Cards\Merchant.obj
+
+# target to build an object file
+Cards\Merchant.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Merchant.cpp.obj
+.PHONY : Cards\Merchant.cpp.obj
+
+Cards\Merchant.i: Cards\Merchant.cpp.i
+.PHONY : Cards\Merchant.i
+
+# target to preprocess a source file
+Cards\Merchant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Merchant.cpp.i
+.PHONY : Cards\Merchant.cpp.i
+
+Cards\Merchant.s: Cards\Merchant.cpp.s
+.PHONY : Cards\Merchant.s
+
+# target to generate assembly for a file
+Cards\Merchant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Merchant.cpp.s
+.PHONY : Cards\Merchant.cpp.s
+
 Cards\Pitfall.obj: Cards\Pitfall.cpp.obj
 .PHONY : Cards\Pitfall.obj
 
@@ -376,6 +400,9 @@ help:
 	@echo ... Cards/Dragon.obj
 	@echo ... Cards/Dragon.i
 	@echo ... Cards/Dragon.s
+	@echo ... Cards/Merchant.obj
+	@echo ... Cards/Merchant.i
+	@echo ... Cards/Merchant.s
 	@echo ... Cards/Pitfall.obj
 	@echo ... Cards/Pitfall.i
 	@echo ... Cards/Pitfall.s
