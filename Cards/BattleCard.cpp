@@ -10,3 +10,14 @@ BattleCard::BattleCard(CardType type, int force, int damage, int loot):
         m_damage(damage),
         m_loot(loot)
 {}
+
+void BattleCard::applyEncounter (Player&player) const {
+    if(player.getAttackStrength()>=m_force)
+    {
+        player.buff(1);
+        player.addCoins(m_loot);
+    }
+    else{
+        player.damage(m_damage);
+    }
+}

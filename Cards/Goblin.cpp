@@ -8,3 +8,4 @@ Goblin::Goblin() : BattleCard(CardType::Battle, 6, 10, 2)
 {
     m_name.assign("Goblin");
 }
+

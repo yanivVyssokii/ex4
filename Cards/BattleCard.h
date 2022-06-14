@@ -10,6 +10,7 @@
 class BattleCard: public Card{
 public:
     BattleCard(CardType type, int force, int damage, int loot);
+    void applyEncounter (Player&player) const override;
 
 protected:
     int m_force;
