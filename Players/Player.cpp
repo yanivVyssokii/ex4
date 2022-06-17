@@ -48,14 +48,6 @@ Player::~Player()
     //delete m_name;
 }
 
-void Player::printInfo() const
-{
-    char* name=new char[m_name.length()+1];
-    strcpy(name,m_name.c_str());
-    //strcpy(job,m_job.c_str());
-    printPlayerInfo(name,m_level,m_force,m_HP,m_coins);
-    delete[] name;
-}
 
 void Player::levelUp()
 {
@@ -125,12 +117,15 @@ std::string Player::getName()const
 
 std::ostream & operator<<(std::ostream& os, const Player& p){
     printPlayerDetails(os,p.m_name,p.m_job,p.m_level,p.m_force,p.m_HP,p.m_coins);
-
     return os;
 
 }
 
 std::string Player::getJob() const {
     return m_job;
+}
+
+int Player::getCoins() const {
+    return m_coins;
 }
 //std::ostream &os, const std::string &name, const std::string &job, int level, int force, int HP, int coins);

@@ -5,7 +5,9 @@
 #include "Fairy.h"
 
 Fairy::Fairy(): Card(CardType::Fairy),m_bonusHP(10)
-{}
+{
+    m_name.assign("Fairy");
+}
 
 void Fairy::applyEncounter(Player &player) const {
     if (player.getJob()==std::string("Wizard")){

@@ -9,6 +9,5 @@
 class Goblin:public BattleCard{
 public:
     Goblin();
-    //void applyEncounter const(Player&player) override;
 };
 #endif //EX4_GOBLIN_H

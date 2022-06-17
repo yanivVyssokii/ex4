@@ -3,6 +3,7 @@
 //
 
 #include "BattleCard.h"
+#include "../utilities.h"
 
 BattleCard::BattleCard(CardType type, int force, int damage, int loot):
         Card(type),

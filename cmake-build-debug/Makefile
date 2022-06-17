@@ -46,10 +46,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\idanh\CLionProjects\EX4\ex4
+CMAKE_SOURCE_DIR = C:\Users\User\CLionProjects\mtmEx4\ex4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,9 +76,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\CMakeFiles C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -358,6 +358,54 @@ Cards\Vampire.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Vampire.cpp.s
 .PHONY : Cards\Vampire.cpp.s
 
+Exception.obj: Exception.cpp.obj
+.PHONY : Exception.obj
+
+# target to build an object file
+Exception.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Exception.cpp.obj
+.PHONY : Exception.cpp.obj
+
+Exception.i: Exception.cpp.i
+.PHONY : Exception.i
+
+# target to preprocess a source file
+Exception.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Exception.cpp.i
+.PHONY : Exception.cpp.i
+
+Exception.s: Exception.cpp.s
+.PHONY : Exception.s
+
+# target to generate assembly for a file
+Exception.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Exception.cpp.s
+.PHONY : Exception.cpp.s
+
+Mtmchkin.obj: Mtmchkin.cpp.obj
+.PHONY : Mtmchkin.obj
+
+# target to build an object file
+Mtmchkin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Mtmchkin.cpp.obj
+.PHONY : Mtmchkin.cpp.obj
+
+Mtmchkin.i: Mtmchkin.cpp.i
+.PHONY : Mtmchkin.i
+
+# target to preprocess a source file
+Mtmchkin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Mtmchkin.cpp.i
+.PHONY : Mtmchkin.cpp.i
+
+Mtmchkin.s: Mtmchkin.cpp.s
+.PHONY : Mtmchkin.s
+
+# target to generate assembly for a file
+Mtmchkin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Mtmchkin.cpp.s
+.PHONY : Mtmchkin.cpp.s
+
 Players\Fighter.obj: Players\Fighter.cpp.obj
 .PHONY : Players\Fighter.obj
 
@@ -478,6 +526,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\main.cpp.s
 .PHONY : main.cpp.s
 
+utilities.obj: utilities.cpp.obj
+.PHONY : utilities.obj
+
+# target to build an object file
+utilities.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\utilities.cpp.obj
+.PHONY : utilities.cpp.obj
+
+utilities.i: utilities.cpp.i
+.PHONY : utilities.i
+
+# target to preprocess a source file
+utilities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\utilities.cpp.i
+.PHONY : utilities.cpp.i
+
+utilities.s: utilities.cpp.s
+.PHONY : utilities.s
+
+# target to generate assembly for a file
+utilities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\utilities.cpp.s
+.PHONY : utilities.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -517,6 +589,12 @@ help:
 	@echo ... Cards/Vampire.obj
 	@echo ... Cards/Vampire.i
 	@echo ... Cards/Vampire.s
+	@echo ... Exception.obj
+	@echo ... Exception.i
+	@echo ... Exception.s
+	@echo ... Mtmchkin.obj
+	@echo ... Mtmchkin.i
+	@echo ... Mtmchkin.s
 	@echo ... Players/Fighter.obj
 	@echo ... Players/Fighter.i
 	@echo ... Players/Fighter.s
@@ -532,6 +610,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... utilities.obj
+	@echo ... utilities.i
+	@echo ... utilities.s
 .PHONY : help
 
 

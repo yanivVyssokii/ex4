@@ -7,6 +7,7 @@
 #include "BattleCard.h"
 
 class Vampire:public BattleCard{
+public:
     Vampire();
 };
 

@@ -5,7 +5,9 @@
 #include "Barfight.h"
 
 Barfight::Barfight(): Card(CardType::Barfight),m_damage(10)
-{}
+{
+    m_name.assign("Barfight");
+}
 
 void Barfight::applyEncounter(Player &player) const {
     if (player.getJob()!=std::string("Fighter")){

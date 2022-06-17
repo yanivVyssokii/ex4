@@ -19,6 +19,7 @@ public:
     void levelUp();
     std::string getJob() const;
     int getLevel() const;
+    int getCoins() const;
     std::string getName() const;
     void buff(int extraForce);
     virtual void heal(int extraHP);
