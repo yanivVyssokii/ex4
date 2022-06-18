@@ -31,7 +31,7 @@ void Mtmchkin::playRound() {
     printRoundStartMessage(m_roundNumber);
 
     int playerNum=0;
-    for (std::shared_ptr<Player> player:m_players) {
+    for (const std::shared_ptr<Player>& player:m_players) {
         std::shared_ptr<Card> currentCard = m_cards.front();
         m_cards.pop_front();
 
@@ -69,15 +69,15 @@ void Mtmchkin::playRound() {
 void Mtmchkin::printLeaderBoard() const {
     int rank=1;
     printLeaderBoardStartMessage();
-    for (std::shared_ptr<Player> player:m_wonPlayers) {
+    for (const std::shared_ptr<Player>& player:m_wonPlayers) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
-    for (std::shared_ptr<Player> player:m_players) {
+    for (const std::shared_ptr<Player>& player:m_players) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
-    for (std::shared_ptr<Player> player:m_lostPlayers) {
+    for (const std::shared_ptr<Player>& player:m_lostPlayers) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
