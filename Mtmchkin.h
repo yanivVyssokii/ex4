@@ -56,9 +56,10 @@ public:
     int getNumberOfRounds() const;
 
 private:
-    std::deque<Player> m_players;
-    Player m_currentPlayer;
-    std::deque<Card> m_cards;
+    std::deque<std::shared_ptr<Player>> m_players;
+    std::deque<std::shared_ptr<Player>> m_wonPlayers;
+    std::deque<std::shared_ptr<Player>> m_lostPlayers;
+    std::deque<std::shared_ptr<Card>> m_cards;
     int m_roundNumber;
     int m_amountOfPlayers;
 };

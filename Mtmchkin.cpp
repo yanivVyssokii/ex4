@@ -10,35 +10,53 @@ void insertNumberOfPlayers(int& numOfPlayers){
 
 }
 
-void insertPlayers(int numOfPlayers, Player& currentPlayer, std::deque<Player>& players){
+void insertPlayers(int numOfPlayers, std::deque<std::shared_ptr<Player>>& players){
 
 }
 
-void insertCards(std::deque<Card>& card){
+void insertCards(std::deque<std::shared_ptr<Card>>& card){
 
 }
 
-/*Mtmchkin::Mtmchkin(const std::string fileName): m_roundNumber(1) {
+Mtmchkin::Mtmchkin(const std::string fileName): m_roundNumber(1) {
     printStartGameMessage();
     insertNumberOfPlayers(m_amountOfPlayers);
-    insertPlayers(m_amountOfPlayers, m_currentPlayer,m_players);
+    insertPlayers(m_amountOfPlayers,m_players);
     insertCards(m_cards);
 
 
-}*/
+}
 
 void Mtmchkin::playRound() {
     printRoundStartMessage(m_roundNumber);
 
-    for (Player player:m_players) {
-        std::unique_ptr<Card> currentCard(&m_cards.front());
-        std::unique_ptr<Player> currentPlayer(&player);
+    int playerNum=0;
+    for (std::shared_ptr<Player> player:m_players) {
+        std::shared_ptr<Card> currentCard = m_cards.front();
         m_cards.pop_front();
 
-        currentCard->applyEncounter(*currentPlayer);
+        //make the move
+        currentCard->applyEncounter(*player);
 
+        //push back the card:
+        m_cards.push_back(currentCard);
 
-        //todo: push back the currents, player only if isn't dead
+        //check if the player is dead and if so delete him from the player deque and add to the losers
+        if (player->isKnockedOut()){
+            m_players.erase(m_players.begin()+playerNum);
+            m_lostPlayers.push_front(player);
+        }
+
+            //check if the player won and if so delete him from the player deque and add to the winners
+        else if (player->getLevel()==10){
+            m_players.erase(m_players.begin()+playerNum);
+            m_wonPlayers.push_back(player);
+        }
+
+        //if the player is still alive and hasn't won move to the next player
+        else {
+            playerNum++;
+        }
     }
 
     if (isGameOver()){
