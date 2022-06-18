@@ -67,7 +67,20 @@ void Mtmchkin::playRound() {
 }
 
 void Mtmchkin::printLeaderBoard() const {
-
+    int rank=1;
+    printLeaderBoardStartMessage();
+    for (std::shared_ptr<Player> player:m_wonPlayers) {
+        printPlayerLeaderBoard(rank,*player);
+        rank++;
+    }
+    for (std::shared_ptr<Player> player:m_players) {
+        printPlayerLeaderBoard(rank,*player);
+        rank++;
+    }
+    for (std::shared_ptr<Player> player:m_lostPlayers) {
+        printPlayerLeaderBoard(rank,*player);
+        rank++;
+    }
 }
 
 bool Mtmchkin::isGameOver() const {
