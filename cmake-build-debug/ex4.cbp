@@ -166,10 +166,10 @@
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Rouge.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Rogue.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Rouge.h">
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Rogue.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Wizard.cpp">

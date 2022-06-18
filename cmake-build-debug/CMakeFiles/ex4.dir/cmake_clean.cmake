@@ -13,7 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ex4.dir/Mtmchkin.cpp.obj"
   "CMakeFiles/ex4.dir/Players/Fighter.cpp.obj"
   "CMakeFiles/ex4.dir/Players/Player.cpp.obj"
-  "CMakeFiles/ex4.dir/Players/Rouge.cpp.obj"
+  "CMakeFiles/ex4.dir/Players/Rogue.cpp.obj"
   "CMakeFiles/ex4.dir/Players/Wizard.cpp.obj"
   "CMakeFiles/ex4.dir/main.cpp.obj"
   "CMakeFiles/ex4.dir/utilities.cpp.obj"

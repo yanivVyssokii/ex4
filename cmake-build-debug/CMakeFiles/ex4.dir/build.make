@@ -112,23 +112,23 @@ CMakeFiles\ex4.dir\Cards\Card.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ex4.dir\Cards\Card.cpp.s /c C:\Users\User\CLionProjects\mtmEx4\ex4\Cards\Card.cpp
 <<
 
-CMakeFiles\ex4.dir\Players\Rouge.cpp.obj: CMakeFiles\ex4.dir\flags.make
-CMakeFiles\ex4.dir\Players\Rouge.cpp.obj: ..\Players\Rouge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ex4.dir/Players/Rouge.cpp.obj"
+CMakeFiles\ex4.dir\Players\Rogue.cpp.obj: CMakeFiles\ex4.dir\flags.make
+CMakeFiles\ex4.dir\Players\Rogue.cpp.obj: ..\Players\Rogue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ex4.dir/Players/Rogue.cpp.obj"
 	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ex4.dir\Players\Rouge.cpp.obj /FdCMakeFiles\ex4.dir\ /FS -c C:\Users\User\CLionProjects\mtmEx4\ex4\Players\Rouge.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ex4.dir\Players\Rogue.cpp.obj /FdCMakeFiles\ex4.dir\ /FS -c C:\Users\User\CLionProjects\mtmEx4\ex4\Players\Rogue.cpp
 <<
 
-CMakeFiles\ex4.dir\Players\Rouge.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Players/Rouge.cpp.i"
-	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\ex4.dir\Players\Rouge.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\mtmEx4\ex4\Players\Rouge.cpp
+CMakeFiles\ex4.dir\Players\Rogue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Players/Rogue.cpp.i"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\ex4.dir\Players\Rogue.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\mtmEx4\ex4\Players\Rogue.cpp
 <<
 
-CMakeFiles\ex4.dir\Players\Rouge.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Players/Rouge.cpp.s"
+CMakeFiles\ex4.dir\Players\Rogue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Players/Rogue.cpp.s"
 	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ex4.dir\Players\Rouge.cpp.s /c C:\Users\User\CLionProjects\mtmEx4\ex4\Players\Rouge.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ex4.dir\Players\Rogue.cpp.s /c C:\Users\User\CLionProjects\mtmEx4\ex4\Players\Rogue.cpp
 <<
 
 CMakeFiles\ex4.dir\Players\Wizard.cpp.obj: CMakeFiles\ex4.dir\flags.make
@@ -402,7 +402,7 @@ ex4_OBJECTS = \
 "CMakeFiles\ex4.dir\main.cpp.obj" \
 "CMakeFiles\ex4.dir\Players\Player.cpp.obj" \
 "CMakeFiles\ex4.dir\Cards\Card.cpp.obj" \
-"CMakeFiles\ex4.dir\Players\Rouge.cpp.obj" \
+"CMakeFiles\ex4.dir\Players\Rogue.cpp.obj" \
 "CMakeFiles\ex4.dir\Players\Wizard.cpp.obj" \
 "CMakeFiles\ex4.dir\Players\Fighter.cpp.obj" \
 "CMakeFiles\ex4.dir\Cards\BattleCard.cpp.obj" \
@@ -424,7 +424,7 @@ ex4_EXTERNAL_OBJECTS =
 ex4.exe: CMakeFiles\ex4.dir\main.cpp.obj
 ex4.exe: CMakeFiles\ex4.dir\Players\Player.cpp.obj
 ex4.exe: CMakeFiles\ex4.dir\Cards\Card.cpp.obj
-ex4.exe: CMakeFiles\ex4.dir\Players\Rouge.cpp.obj
+ex4.exe: CMakeFiles\ex4.dir\Players\Rogue.cpp.obj
 ex4.exe: CMakeFiles\ex4.dir\Players\Wizard.cpp.obj
 ex4.exe: CMakeFiles\ex4.dir\Players\Fighter.cpp.obj
 ex4.exe: CMakeFiles\ex4.dir\Cards\BattleCard.cpp.obj

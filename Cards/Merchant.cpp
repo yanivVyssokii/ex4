@@ -31,6 +31,7 @@ void Merchant::applyEncounter(Player &player) const {
     int price=(actionNum==1)?5:(actionNum==2)?10:0;
     if (player.getCoins()<price){
         printMerchantInsufficientCoins(std::cout);
+        return;
     }
     else if (actionNum==1){
         player.heal(1);
@@ -38,5 +39,6 @@ void Merchant::applyEncounter(Player &player) const {
     else if(actionNum==2){
         player.buff(1);
     }
+    player.pay(price);
     printMerchantSummary(std::cout,player.getName(),actionNum,price);
 }

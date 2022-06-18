@@ -454,29 +454,29 @@ Players\Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Player.cpp.s
 .PHONY : Players\Player.cpp.s
 
-Players\Rouge.obj: Players\Rouge.cpp.obj
-.PHONY : Players\Rouge.obj
+Players\Rogue.obj: Players\Rogue.cpp.obj
+.PHONY : Players\Rogue.obj
 
 # target to build an object file
-Players\Rouge.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Rouge.cpp.obj
-.PHONY : Players\Rouge.cpp.obj
+Players\Rogue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Rogue.cpp.obj
+.PHONY : Players\Rogue.cpp.obj
 
-Players\Rouge.i: Players\Rouge.cpp.i
-.PHONY : Players\Rouge.i
+Players\Rogue.i: Players\Rogue.cpp.i
+.PHONY : Players\Rogue.i
 
 # target to preprocess a source file
-Players\Rouge.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Rouge.cpp.i
-.PHONY : Players\Rouge.cpp.i
+Players\Rogue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Rogue.cpp.i
+.PHONY : Players\Rogue.cpp.i
 
-Players\Rouge.s: Players\Rouge.cpp.s
-.PHONY : Players\Rouge.s
+Players\Rogue.s: Players\Rogue.cpp.s
+.PHONY : Players\Rogue.s
 
 # target to generate assembly for a file
-Players\Rouge.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Rouge.cpp.s
-.PHONY : Players\Rouge.cpp.s
+Players\Rogue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Rogue.cpp.s
+.PHONY : Players\Rogue.cpp.s
 
 Players\Wizard.obj: Players\Wizard.cpp.obj
 .PHONY : Players\Wizard.obj
@@ -601,9 +601,9 @@ help:
 	@echo ... Players/Player.obj
 	@echo ... Players/Player.i
 	@echo ... Players/Player.s
-	@echo ... Players/Rouge.obj
-	@echo ... Players/Rouge.i
-	@echo ... Players/Rouge.s
+	@echo ... Players/Rogue.obj
+	@echo ... Players/Rogue.i
+	@echo ... Players/Rogue.s
 	@echo ... Players/Wizard.obj
 	@echo ... Players/Wizard.i
 	@echo ... Players/Wizard.s

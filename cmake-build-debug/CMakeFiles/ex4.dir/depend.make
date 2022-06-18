@@ -76,6 +76,13 @@ CMakeFiles\ex4.dir\Cards\Vampire.cpp.obj: ..\utilities.h
 CMakeFiles\ex4.dir\Exception.cpp.obj: ..\Exception.cpp
 CMakeFiles\ex4.dir\Exception.cpp.obj: ..\Exception.h
 
+CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Cards\Card.h
+CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Exception.h
+CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Mtmchkin.cpp
+CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Mtmchkin.h
+CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Players\Player.h
+CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\utilities.h
+
 CMakeFiles\ex4.dir\Players\Fighter.cpp.obj: ..\Players\Fighter.cpp
 CMakeFiles\ex4.dir\Players\Fighter.cpp.obj: ..\Players\Fighter.h
 CMakeFiles\ex4.dir\Players\Fighter.cpp.obj: ..\Players\Player.h
@@ -85,9 +92,9 @@ CMakeFiles\ex4.dir\Players\Player.cpp.obj: ..\Players\Player.cpp
 CMakeFiles\ex4.dir\Players\Player.cpp.obj: ..\Players\Player.h
 CMakeFiles\ex4.dir\Players\Player.cpp.obj: ..\utilities.h
 
-CMakeFiles\ex4.dir\Players\Rouge.cpp.obj: ..\Players\Player.h
-CMakeFiles\ex4.dir\Players\Rouge.cpp.obj: ..\Players\Rouge.cpp
-CMakeFiles\ex4.dir\Players\Rouge.cpp.obj: ..\Players\Rouge.h
+CMakeFiles\ex4.dir\Players\Rogue.cpp.obj: ..\Players\Player.h
+CMakeFiles\ex4.dir\Players\Rogue.cpp.obj: ..\Players\Rogue.cpp
+CMakeFiles\ex4.dir\Players\Rogue.cpp.obj: ..\Players\Rogue.h
 
 CMakeFiles\ex4.dir\Players\Wizard.cpp.obj: ..\Players\Player.h
 CMakeFiles\ex4.dir\Players\Wizard.cpp.obj: ..\Players\Wizard.cpp
@@ -99,13 +106,14 @@ CMakeFiles\ex4.dir\main.cpp.obj: ..\Cards\Card.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\Cards\Dragon.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\Cards\Fairy.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\Cards\Goblin.h
+CMakeFiles\ex4.dir\main.cpp.obj: ..\Cards\Merchant.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\Cards\Pitfall.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\Cards\Treasure.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\Cards\Vampire.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\Exception.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\Players\Fighter.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\Players\Player.h
-CMakeFiles\ex4.dir\main.cpp.obj: ..\Players\Rouge.h
+CMakeFiles\ex4.dir\main.cpp.obj: ..\Players\Rogue.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\Players\Wizard.h
 CMakeFiles\ex4.dir\main.cpp.obj: ..\main.cpp
 CMakeFiles\ex4.dir\main.cpp.obj: ..\utilities.h
