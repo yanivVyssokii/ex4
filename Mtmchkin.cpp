@@ -10,6 +10,11 @@
 #include <vector>
 #include "utilities.h"
 #include <map>
+#include <regex>
+
+bool containsOnlyLetters(std::string const &str) {
+    return std::regex_match(str, std::regex("^[A-Za-z]+$"));
+}
 
 Player* RogueFactory(std::string name, std::string job, int maxHP=100, int force=5){
     return new Rogue(name,job,maxHP,force);
@@ -55,7 +60,19 @@ void insertPlayers(int numOfPlayers, std::deque<std::shared_ptr<Player>>& player
         std::getline(std::cin,line);
         std::istringstream lineToSplit(line);
         std::vector<std::string> results(std::istream_iterator<std::string>{lineToSplit},std::istream_iterator<std::string>());
-        players.push_back(std::shared_ptr<Player>(constructorsMap[job](name,job,100,5)));
+        name=results[0];
+        job=results[1];
+        if (!containsOnlyLetters(name)){
+            printInvalidName();
+            i--;
+        }
+        else if (job!="Rogue"&&job!="Wizard"&&job!="Fighter"){
+            printInvalidClass();
+            i--;
+        }
+        else {
+            players.push_back(std::shared_ptr<Player>(constructorsMap[job](name, job, 100, 5)));
+        }
         //todo: check bad input cases
     }
 }
@@ -93,7 +110,7 @@ void Mtmchkin::playRound() {
             m_lostPlayers.push_front(player);
         }
 
-            //check if the player won and if so delete him from the player deque and add to the winners
+        //check if the player won and if so delete him from the player deque and add to the winners
         else if (player->getLevel()==10){
             m_players.erase(m_players.begin()+playerNum);
             m_wonPlayers.push_back(player);
