@@ -10,7 +10,7 @@
 
 class DeckFileNotFound: public std::invalid_argument{
 public:
-    explicit DeckFileNotFound(std::string fileName);
+    explicit DeckFileNotFound();
     const char* what() const override;
 
 };

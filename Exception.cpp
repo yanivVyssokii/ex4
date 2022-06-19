@@ -5,7 +5,7 @@
 #include "Exception.h"
 #include <string>
 
-DeckFileNotFound::DeckFileNotFound(std::string fileName): std::invalid_argument("Deck File Error: File not found")
+DeckFileNotFound::DeckFileNotFound(): std::invalid_argument("Deck File Error: File not found")
 {}
 
 const char *DeckFileNotFound::what() const {
