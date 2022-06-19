@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "utilities.h"
 #include "Players/Player.h"
 #include "Players/Rogue.h"
@@ -16,19 +17,22 @@
 
 
 int main() {
-    Vampire v;
-    Goblin g;
-    Dragon d;
-    std::cout<<d<<std::endl;
-    std::cout<<g<<std::endl;
-    std::cout<<v<<std::endl;
-
-    Merchant m;
-    Rogue r("r","Rogue");
-    r.addCoins(100);
-    std::cout<<m<<std::endl;
-    std::cout<<r<<std::endl;
-    m.applyEncounter(r);
-    std::cout<<r<<std::endl;
+    printEnterTeamSizeMessage();
+    int numOfPlayers=0;
+    std::string input;
+    bool success = false;
+    while(!success||numOfPlayers<2||numOfPlayers>6) {
+        try {
+            std::getline(std::cin,input);
+            numOfPlayers= std::stoi(input);
+            if (numOfPlayers<2||numOfPlayers>6){
+                printInvalidTeamSize();
+                continue;
+            }
+            success = true;
+        } catch (...) {
+            printInvalidTeamSize();
+        }
+    }
     return 0;
 }

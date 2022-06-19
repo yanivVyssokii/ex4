@@ -7,6 +7,7 @@
 #include "Players/Wizard.h"
 #include "Players/Fighter.h"
 #include <string>
+#include <vector>
 #include "utilities.h"
 #include <map>
 
@@ -23,7 +24,22 @@ Player* FighterFactory(std::string name, std::string job, int maxHP=100, int for
 }
 
 void insertNumberOfPlayers(int& numOfPlayers){
-
+    printEnterTeamSizeMessage();
+    std::string input;
+    bool success = false;
+    while(!success||numOfPlayers<2||numOfPlayers>6) {
+        try {
+            std::getline(std::cin,input);
+            numOfPlayers= std::stoi(input);
+            if (numOfPlayers<2||numOfPlayers>6){
+                printInvalidTeamSize();
+                continue;
+            }
+            success = true;
+        } catch (...) {
+            printInvalidTeamSize();
+        }
+    }
 }
 
 void insertPlayers(int numOfPlayers, std::deque<std::shared_ptr<Player>>& players){
@@ -35,7 +51,12 @@ void insertPlayers(int numOfPlayers, std::deque<std::shared_ptr<Player>>& player
 
     for (int i=0;i<numOfPlayers;i++){
         printInsertPlayerMessage();
-
+        std::string line, name, job;
+        std::getline(std::cin,line);
+        std::istringstream lineToSplit(line);
+        std::vector<std::string> results(std::istream_iterator<std::string>{lineToSplit},std::istream_iterator<std::string>());
+        players.push_back(std::shared_ptr<Player>(constructorsMap[job](name,job,100,5)));
+        //todo: check bad input cases
     }
 }
 

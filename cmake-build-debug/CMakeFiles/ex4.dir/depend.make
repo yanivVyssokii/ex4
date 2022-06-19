@@ -80,7 +80,10 @@ CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Cards\Card.h
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Exception.h
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Mtmchkin.cpp
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Mtmchkin.h
+CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Players\Fighter.h
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Players\Player.h
+CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Players\Rogue.h
+CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Players\Wizard.h
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\utilities.h
 
 CMakeFiles\ex4.dir\Players\Fighter.cpp.obj: ..\Players\Fighter.cpp
