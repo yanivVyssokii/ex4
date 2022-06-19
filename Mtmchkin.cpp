@@ -78,7 +78,7 @@ void insertPlayers(int numOfPlayers, std::deque<std::shared_ptr<Player>>& player
 }
 
 void insertCards(std::deque<std::shared_ptr<Card>>& card, const std::string fileName){
-
+//
 }
 
 Mtmchkin::Mtmchkin(const std::string fileName): m_roundNumber(1) {
