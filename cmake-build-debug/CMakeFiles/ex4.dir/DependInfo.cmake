@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/idanh/CLionProjects/EX4/ex4/Players/Rogue.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Rogue.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/Players/Wizard.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Players/Wizard.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/main.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/main.cpp.obj"
+  "C:/Users/idanh/CLionProjects/EX4/ex4/test.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/test.cpp.obj"
   "C:/Users/idanh/CLionProjects/EX4/ex4/utilities.cpp" "C:/Users/idanh/CLionProjects/EX4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/utilities.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
