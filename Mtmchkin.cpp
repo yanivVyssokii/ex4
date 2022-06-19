@@ -3,15 +3,40 @@
 //
 
 #include "Mtmchkin.h"
+#include "Players/Rogue.h"
+#include "Players/Wizard.h"
+#include "Players/Fighter.h"
 #include <string>
 #include "utilities.h"
+#include <map>
+
+Player* RogueFactory(std::string name, std::string job, int maxHP=100, int force=5){
+    return new Rogue(name,job,maxHP,force);
+}
+
+Player* WizardFactory(std::string name, std::string job, int maxHP=100, int force=5){
+    return new Wizard(name,job,maxHP,force);
+}
+
+Player* FighterFactory(std::string name, std::string job, int maxHP=100, int force=5){
+    return new Fighter(name,job,maxHP,force);
+}
 
 void insertNumberOfPlayers(int& numOfPlayers){
 
 }
 
 void insertPlayers(int numOfPlayers, std::deque<std::shared_ptr<Player>>& players){
+    typedef Player* (*constructorFunction)(std::string,std::string,int,int);
+    std::map<std::string, constructorFunction> constructorsMap;
+    constructorsMap["Rogue"]=&RogueFactory;
+    constructorsMap["Wizard"]=&WizardFactory;
+    constructorsMap["Fighter"]=&FighterFactory;
 
+    for (int i=0;i<numOfPlayers;i++){
+        printInsertPlayerMessage();
+
+    }
 }
 
 void insertCards(std::deque<std::shared_ptr<Card>>& card, const std::string fileName){
