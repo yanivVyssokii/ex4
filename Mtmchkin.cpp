@@ -11,6 +11,20 @@
 #include "utilities.h"
 #include <map>
 #include <regex>
+#include "fstream"
+#include "Exception.h"
+//Cards includes//
+#include "Cards/Vampire.h"
+#include "Cards/Barfight.h"
+#include "Cards/Dragon.h"
+#include "Cards/Fairy.h"
+#include "Cards/Goblin.h"
+#include "Cards/Merchant.h"
+#include "Cards/Pitfall.h"
+#include "Cards/Treasure.h"
+#include "Players/Rogue.h"
+#include "Players/Wizard.h"
+#include "Players/Fighter.h"
 
 bool containsOnlyLetters(std::string const &str) {
     return std::regex_match(str, std::regex("^[A-Za-z]+$"));
@@ -73,12 +87,58 @@ void insertPlayers(int numOfPlayers, std::deque<std::shared_ptr<Player>>& player
         else {
             players.push_back(std::shared_ptr<Player>(constructorsMap[job](name, job, 100, 5)));
         }
-        //todo: check bad input cases
+
+
+
     }
 }
 
 void insertCards(std::deque<std::shared_ptr<Card>>& card, const std::string fileName){
-//
+    std::ifstream source(fileName);
+    if (!source) {
+        throw(DeckFileNotFound());
+    }
+    std::string line,cardName;
+    int currentLine=1;
+    while (std::getline(source, line)) {
+        if(line == "Merchant"){
+            Merchant m;
+            card.push_back(std::shared_ptr<Card>(&m));
+        }
+        else if(line == "Dragon"){
+            Dragon d;
+            card.push_back(std::shared_ptr<Card>(&d));
+        }
+        else if(line == "Fairy"){
+            Fairy f;
+            card.push_back(std::shared_ptr<Card>(&f));
+        }
+        else if(line == "Goblin"){
+            Goblin g;
+            card.push_back(std::shared_ptr<Card>(&g));
+        }
+        else if(line == "Pitfall"){
+           Pitfall p;
+            card.push_back(std::shared_ptr<Card>(&p));
+        }
+        else if(line == "Treasure"){
+            Treasure t;
+            card.push_back(std::shared_ptr<Card>(&t));
+        }
+        else if(line == "Vampire"){
+            Vampire v;
+            card.push_back(std::shared_ptr<Card>(&v));
+        }
+        else{
+            throw(DeckFileFormatError(currentLine));
+        }
+        currentLine++;
+    }
+    if(currentLine<5){
+        throw(DeckFileInvalidSize());
+    }
+
+
 }
 
 Mtmchkin::Mtmchkin(const std::string fileName): m_roundNumber(1) {
