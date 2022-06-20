@@ -5,11 +5,12 @@
 #define MTMCHKIN_H_
 
 #include <string>
+#include <memory>
 #include <deque>
 #include "Players/Player.h"
 #include "Cards/Card.h"
 
-using std::unique_ptr;
+//using std::unique_ptr;
 using namespace std;
 
 class Mtmchkin{

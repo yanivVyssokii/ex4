@@ -49,6 +49,7 @@ Player* FighterFactory(string name){
 void insertNumberOfPlayers(int& numOfPlayers){
     printEnterTeamSizeMessage();
     string input;
+    numOfPlayers=0;
     bool success = false;
     while(!success) {
         try {
