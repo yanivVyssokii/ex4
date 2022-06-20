@@ -8,14 +8,14 @@
 #include <exception>
 #include <iostream>
 
-class DeckFileNotFound: public std::invalid_argument{
+class DeckFileNotFound: public std::exception{
 public:
     explicit DeckFileNotFound();
     const char* what() const noexcept override;
 
 };
 
-class DeckFileInvalidSize: public std::length_error{
+class DeckFileInvalidSize: public std::exception{
 public:
     explicit DeckFileInvalidSize();
     const char* what() const noexcept override;
