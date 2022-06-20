@@ -48,6 +48,7 @@ void insertNumberOfPlayers(int& numOfPlayers){
     bool success = false;
     while(!success||numOfPlayers<2||numOfPlayers>6) {
         try {
+            std::cout<<"hi"<<std::endl;
             std::getline(std::cin,input);
             numOfPlayers= std::stoi(input);
             if (numOfPlayers<2||numOfPlayers>6){
@@ -121,6 +122,9 @@ void insertCards(std::deque<std::unique_ptr<Card>>& card, const std::string file
         }
         else if(line == "Vampire"){
             card.push_back(std::unique_ptr<Card>(new Vampire()));
+        }
+        else if(line == "Barfight"){
+            card.push_back(std::unique_ptr<Card>(new Barfight()));
         }
         else{
             throw(DeckFileFormatError(currentLine));

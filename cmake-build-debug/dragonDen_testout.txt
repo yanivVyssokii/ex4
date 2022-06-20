@@ -1,5 +1,6 @@
 Welcome to the world of MtmChkin!!!
 Please enter team size: (2-6)
+hi
 Please insert the player name and class: 
 Please insert the player name and class: 
 
@@ -7,10 +8,10 @@ Please insert the player name and class:
 Start of round 1:
 
 Start of Jimmy's turn: 
-00CDFD10
+009D2838
 Player Jimmy has been defeated by a Dragon.
 Start of Pikachu's turn: 
-00CE1F38
+009D0430
 Player Pikachu has been defeated by a Dragon.
 The Game has ended!!!
 
