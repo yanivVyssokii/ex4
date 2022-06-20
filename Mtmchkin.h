@@ -9,6 +9,7 @@
 #include "Players/Player.h"
 #include "Cards/Card.h"
 
+using std::unique_ptr;
 using namespace std;
 
 class Mtmchkin{
