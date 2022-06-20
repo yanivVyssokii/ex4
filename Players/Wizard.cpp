@@ -3,7 +3,7 @@
 //
 
 #include "Wizard.h"
-Wizard::Wizard(std::string name, std::string job, int maxHP, int force):Player(name, job, maxHP, force){
+Wizard::Wizard(std::string name):Player(name, "Wizard"){
 
 }
 void Wizard::heal(int extraHP) {

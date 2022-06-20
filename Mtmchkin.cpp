@@ -30,23 +30,23 @@ bool containsOnlyLetters(std::string const &str) {
     return std::regex_match(str, std::regex("^[A-Za-z]+$"));
 }
 
-Player* RogueFactory(std::string name, std::string job, int maxHP=100, int force=5){
-    return new Rogue(name,job,maxHP,force);
+Player* RogueFactory(std::string name){
+    return new Rogue(name);
 }
 
-Player* WizardFactory(std::string name, std::string job, int maxHP=100, int force=5){
-    return new Wizard(name,job,maxHP,force);
+Player* WizardFactory(std::string name){
+    return new Wizard(name);
 }
 
-Player* FighterFactory(std::string name, std::string job, int maxHP=100, int force=5){
-    return new Fighter(name,job,maxHP,force);
+Player* FighterFactory(std::string name){
+    return new Fighter(name);
 }
 
 void insertNumberOfPlayers(int& numOfPlayers){
     printEnterTeamSizeMessage();
     std::string input;
     bool success = false;
-    while(!success||numOfPlayers<2||numOfPlayers>6) {
+    while(!success) {
         try {
             std::getline(std::cin,input);
             numOfPlayers= std::stoi(input);
@@ -62,14 +62,17 @@ void insertNumberOfPlayers(int& numOfPlayers){
 }
 
 void insertPlayers(int numOfPlayers, std::deque<std::unique_ptr<Player>>& players){
-    typedef Player* (*constructorFunction)(std::string,std::string,int,int);
+    typedef Player* (*constructorFunction)(std::string);
     std::map<std::string, constructorFunction> constructorsMap;
     constructorsMap["Rogue"]=&RogueFactory;
     constructorsMap["Wizard"]=&WizardFactory;
     constructorsMap["Fighter"]=&FighterFactory;
 
+    bool success = true;
     for (int i=0;i<numOfPlayers;i++){
-        printInsertPlayerMessage();
+        if (success) {
+            printInsertPlayerMessage();
+        }
         std::string line, name, job;
         std::getline(std::cin,line);
         std::istringstream lineToSplit(line);
@@ -78,14 +81,17 @@ void insertPlayers(int numOfPlayers, std::deque<std::unique_ptr<Player>>& player
         job=results[1];
         if (!containsOnlyLetters(name)){
             printInvalidName();
+            success= false;
             i--;
         }
         else if (job!="Rogue"&&job!="Wizard"&&job!="Fighter"){
             printInvalidClass();
+            success= false;
             i--;
         }
         else {
-            players.push_back(std::unique_ptr<Player>(constructorsMap[job](name, job, 100, 5)));
+            players.push_back(std::unique_ptr<Player>(constructorsMap[job](name)));
+            success=true;
         }
 
 
@@ -137,7 +143,7 @@ void insertCards(std::deque<std::unique_ptr<Card>>& card, const std::string file
 
 }
 
-Mtmchkin::Mtmchkin(const std::string fileName): m_roundNumber(1) {
+Mtmchkin::Mtmchkin(const std::string fileName): m_roundNumber(0) {
     printStartGameMessage();
     insertNumberOfPlayers(m_amountOfPlayers);
     insertPlayers(m_amountOfPlayers,m_players);
@@ -147,7 +153,7 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_roundNumber(1) {
 }
 
 void Mtmchkin::playRound() {
-    printRoundStartMessage(m_roundNumber);
+    printRoundStartMessage(m_roundNumber+1);
 
     int size=m_amountOfPlayers;
     for (int i=0; i<size; i++) {

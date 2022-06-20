@@ -10,7 +10,6 @@
 
 class Player{
 public:
-    explicit Player(std::string name,std::string job, int maxHP=100, int force=5);
     Player(const Player& player);
     Player& operator=(const Player& player);
     friend std::ostream& operator<<(std::ostream& os, const Player& p);
@@ -20,6 +19,7 @@ public:
     std::string getJob() const;
     int getLevel() const;
     int getCoins() const;
+    int getForce() const;
     std::string getName() const;
     void buff(int extraForce);
     virtual void heal(int extraHP);
@@ -30,6 +30,7 @@ public:
     virtual int getAttackStrength() const;
 
 protected:
+    explicit Player(std::string name, std::string job);
     std::string m_name;
     std::string m_job;
     int m_level;

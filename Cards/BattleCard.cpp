@@ -21,6 +21,9 @@ void BattleCard::applyEncounter (Player& player) const {
     }
     else{
         player.damage(m_damage);
+        if (m_name=="Vampire"&&player.getForce()>0){
+            player.buff(-1);
+        }
         printLossBattle(player.getName(),m_name);
     }
 }

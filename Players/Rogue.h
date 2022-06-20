@@ -9,7 +9,7 @@
 class Rogue:public Player
 {
 public:
-    explicit Rogue(std::string name, std::string job, int maxHP=100, int force=5);
+    explicit Rogue(std::string name);
     void addCoins(int extraCoins) override;
 };
 #endif //EX4_ROGUE_H

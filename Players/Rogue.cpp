@@ -4,7 +4,7 @@
 
 #include "Rogue.h"
 
-Rogue::Rogue(std::string name, std::string job, int maxHP, int force):Player(name, job, maxHP, force){
+Rogue::Rogue(std::string name):Player(name, "Rogue"){
 
 }
 

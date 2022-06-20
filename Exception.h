@@ -11,21 +11,21 @@
 class DeckFileNotFound: public std::invalid_argument{
 public:
     explicit DeckFileNotFound();
-    const char* what() const override;
+    const char* what() const noexcept override;
 
 };
 
 class DeckFileInvalidSize: public std::length_error{
 public:
     explicit DeckFileInvalidSize();
-    const char* what() const override;
+    const char* what() const noexcept override;
 
 };
 
 class DeckFileFormatError: public std::exception{
 public:
     explicit DeckFileFormatError(int line);
-    const char* what() const override;
+    const char* what() const noexcept override;
 
 private:
     int m_line;

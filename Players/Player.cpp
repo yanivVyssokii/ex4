@@ -6,12 +6,12 @@
 #include "../utilities.h"
 #define MAX_LEVEL 10
 
-Player::Player(std::string name,std::string job, int maxHP, int force):
+Player::Player(std::string name, std::string job):
         m_level(1),
         m_coins(10),
-        m_force(force),
-        m_HP(maxHP),
-        m_maxHP(maxHP)
+        m_force(5),
+        m_HP(100),
+        m_maxHP(100)
 {
     m_name.assign(name);
     m_job.assign(job);
@@ -127,5 +127,9 @@ std::string Player::getJob() const {
 
 int Player::getCoins() const {
     return m_coins;
+}
+
+int Player::getForce() const {
+    return m_force;
 }
 //std::ostream &os, const std::string &name, const std::string &job, int level, int force, int HP, int coins);

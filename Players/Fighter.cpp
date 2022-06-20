@@ -3,9 +3,8 @@
 //
 
 #include "Fighter.h"
-Fighter::Fighter(std::string name, std::string job, int maxHP, int force):Player(name, job, maxHP, force){
-
-}
+Fighter::Fighter(std::string name):Player(name,"Fighter")
+{}
 int Fighter::getAttackStrength() const {
     return m_level+2*m_force;
 }
