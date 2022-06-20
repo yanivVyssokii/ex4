@@ -288,7 +288,7 @@ bool noFileTest()
     string deck("This_is_not_the_file_your_looking_for");
     bool flag = false;
     try{
-        Mtmchkin("noFile.txt");
+        Mtmchkin("inputs/noFile.txt");
     }
     catch(const DeckFileNotFound& e){
         flag=true;
@@ -322,7 +322,7 @@ bool badFormatStartTest()
     string expectedOutputFilename("notneeded.txt");
     bool flag = false;
     try {
-        Mtmchkin("badFormat_test_start_of_file.txt");
+        Mtmchkin("inputs/badFormat_test_start_of_file.txt");
     }
     catch(const DeckFileFormatError& e){
         if(strcmp(e.what(),"Deck File Error: File format error in line 1")==0)
@@ -371,7 +371,7 @@ int main(){
     run_test(goblinCaveTest,"Goblin Cave simulation test");
     run_test(vampireLairTest,"Vampire Lair simulation test");
     run_test(nonMostersTest,"Non monsters cards simulation test");
-    //run_test(badFormatStartTest,"Bad format at start of file exception test");
+    run_test(badFormatStartTest,"Bad format at start of file exception test");
     //run_test(badFormatTest,"Bad format exception test");
     //run_test(noFileTest,"File Doesnt exist exception test");
     //run_test(badSizeTest,"Bad size exception test");

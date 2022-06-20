@@ -11,7 +11,7 @@
 
 class DeckFileNotFound: public std::exception{
 public:
-    const char* what() const override{
+    const char* what() const noexcept override{
         return "Deck File Error: File not found";
     }
 
@@ -19,7 +19,7 @@ public:
 
 class DeckFileInvalidSize: public std::exception{
 public:
-    const char* what() const override{
+    const char* what() const noexcept override{
         return "Deck File Error: Deck size is invalid";
     }
 
@@ -29,7 +29,7 @@ class DeckFileFormatError: public std::exception{
 public:
     explicit DeckFileFormatError(int line):m_line(line)
     {}
-    const char* what() const override{
+    const char* what() const noexcept override{
         std::string massage = std::string("Deck File Error: File format error in line ")+ std::to_string(m_line);
         return massage.c_str();
     }

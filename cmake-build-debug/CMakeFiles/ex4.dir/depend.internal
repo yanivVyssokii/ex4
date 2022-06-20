@@ -73,9 +73,6 @@ CMakeFiles/ex4.dir/Cards/Vampire.cpp.obj
  C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
-CMakeFiles/ex4.dir/Exception.cpp.obj
- C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.cpp
- C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.h
 CMakeFiles/ex4.dir/Mtmchkin.cpp.obj
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Barfight.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.h
@@ -112,24 +109,6 @@ CMakeFiles/ex4.dir/Players/Wizard.cpp.obj
  C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Wizard.cpp
  C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Wizard.h
-CMakeFiles/ex4.dir/main.cpp.obj
- C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Barfight.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Dragon.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Merchant.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Pitfall.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Treasure.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Fighter.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Rogue.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Wizard.h
- C:/Users/User/CLionProjects/mtmEx4/ex4/main.cpp
- C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
 CMakeFiles/ex4.dir/test.cpp.obj
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Barfight.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.h
@@ -149,6 +128,8 @@ CMakeFiles/ex4.dir/test.cpp.obj
  C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Wizard.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/test.cpp
  C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
+CMakeFiles/ex4.dir/tool/main.cpp.obj
+ C:/Users/User/CLionProjects/mtmEx4/ex4/tool/main.cpp
 CMakeFiles/ex4.dir/utilities.cpp.obj
  C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h

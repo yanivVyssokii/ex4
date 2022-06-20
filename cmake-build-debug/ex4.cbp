@@ -142,9 +142,6 @@
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.cpp">
-			<Option target="ex4"/>
-		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.h">
 			<Option target="ex4"/>
 		</Unit>
@@ -178,10 +175,10 @@
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Wizard.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/main.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/test.cpp">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/test.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/tool/main.cpp">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.cpp">

@@ -358,30 +358,6 @@ Cards\Vampire.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Cards\Vampire.cpp.s
 .PHONY : Cards\Vampire.cpp.s
 
-Exception.obj: Exception.cpp.obj
-.PHONY : Exception.obj
-
-# target to build an object file
-Exception.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Exception.cpp.obj
-.PHONY : Exception.cpp.obj
-
-Exception.i: Exception.cpp.i
-.PHONY : Exception.i
-
-# target to preprocess a source file
-Exception.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Exception.cpp.i
-.PHONY : Exception.cpp.i
-
-Exception.s: Exception.cpp.s
-.PHONY : Exception.s
-
-# target to generate assembly for a file
-Exception.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Exception.cpp.s
-.PHONY : Exception.cpp.s
-
 Mtmchkin.obj: Mtmchkin.cpp.obj
 .PHONY : Mtmchkin.obj
 
@@ -502,30 +478,6 @@ Players\Wizard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\Players\Wizard.cpp.s
 .PHONY : Players\Wizard.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\main.cpp.s
-.PHONY : main.cpp.s
-
 test.obj: test.cpp.obj
 .PHONY : test.obj
 
@@ -549,6 +501,30 @@ test.s: test.cpp.s
 test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\test.cpp.s
 .PHONY : test.cpp.s
+
+tool\main.obj: tool\main.cpp.obj
+.PHONY : tool\main.obj
+
+# target to build an object file
+tool\main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\tool\main.cpp.obj
+.PHONY : tool\main.cpp.obj
+
+tool\main.i: tool\main.cpp.i
+.PHONY : tool\main.i
+
+# target to preprocess a source file
+tool\main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\tool\main.cpp.i
+.PHONY : tool\main.cpp.i
+
+tool\main.s: tool\main.cpp.s
+.PHONY : tool\main.s
+
+# target to generate assembly for a file
+tool\main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\tool\main.cpp.s
+.PHONY : tool\main.cpp.s
 
 utilities.obj: utilities.cpp.obj
 .PHONY : utilities.obj
@@ -613,9 +589,6 @@ help:
 	@echo ... Cards/Vampire.obj
 	@echo ... Cards/Vampire.i
 	@echo ... Cards/Vampire.s
-	@echo ... Exception.obj
-	@echo ... Exception.i
-	@echo ... Exception.s
 	@echo ... Mtmchkin.obj
 	@echo ... Mtmchkin.i
 	@echo ... Mtmchkin.s
@@ -631,12 +604,12 @@ help:
 	@echo ... Players/Wizard.obj
 	@echo ... Players/Wizard.i
 	@echo ... Players/Wizard.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s
+	@echo ... tool/main.obj
+	@echo ... tool/main.i
+	@echo ... tool/main.s
 	@echo ... utilities.obj
 	@echo ... utilities.i
 	@echo ... utilities.s
