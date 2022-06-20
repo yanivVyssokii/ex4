@@ -48,7 +48,6 @@ void insertNumberOfPlayers(int& numOfPlayers){
     bool success = false;
     while(!success||numOfPlayers<2||numOfPlayers>6) {
         try {
-            std::cout<<"hi"<<std::endl;
             std::getline(std::cin,input);
             numOfPlayers= std::stoi(input);
             if (numOfPlayers<2||numOfPlayers>6){
@@ -158,7 +157,6 @@ void Mtmchkin::playRound() {
         std::unique_ptr<Player> currentPlayer= std::move(m_players.front());
         m_players.pop_front();
         //make the move
-        std::cout<<currentPlayer<<std::endl;
         currentCard->applyEncounter(*currentPlayer);
 //
         //push back the card:
@@ -172,14 +170,13 @@ void Mtmchkin::playRound() {
 
         //check if the player won and if so delete him from the player deque and add to the winners
         else if (currentPlayer->getLevel()==10){
-            m_wonPlayers.push_front(std::move(currentPlayer));
+            m_wonPlayers.push_back(std::move(currentPlayer));
             m_amountOfPlayers--;
         }
 
         //if the player is still alive and hasn't won move to the next player
         else {
             m_players.push_back(std::move(currentPlayer));
-            m_players.pop_front();
         }
     }
 

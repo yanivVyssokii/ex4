@@ -15,7 +15,7 @@ BattleCard::BattleCard(CardType type, std::string name, int force, int damage, i
 void BattleCard::applyEncounter (Player& player) const {
     if(player.getAttackStrength()>=m_force)
     {
-        player.buff(1);
+        player.levelUp();
         player.addCoins(m_loot);
         printWinBattle(player.getName(),m_name);
     }

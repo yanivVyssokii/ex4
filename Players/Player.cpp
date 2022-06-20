@@ -8,7 +8,7 @@
 
 Player::Player(std::string name,std::string job, int maxHP, int force):
         m_level(1),
-        m_coins(0),
+        m_coins(10),
         m_force(force),
         m_HP(maxHP),
         m_maxHP(maxHP)
