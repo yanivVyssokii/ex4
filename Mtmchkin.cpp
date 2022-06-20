@@ -157,8 +157,8 @@ void Mtmchkin::playRound() {
     for (int i=0; i<size; i++) {
         printTurnStartMessage(m_players.front()->getName());
         //make the move
-        m_cards.front()->applyEncounter(*(m_players.front()));
-
+        m_cards.front()->applyEncounter(*m_players.front());
+//
         //push back the card:
         m_cards.push_back(std::move(m_cards.front()));
         m_cards.pop_front();
