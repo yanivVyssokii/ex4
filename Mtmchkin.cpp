@@ -26,7 +26,9 @@
 #include "Players/Wizard.h"
 #include "Players/Fighter.h"
 
+using std::unique_ptr;
 using namespace std;
+
 
 bool containsOnlyLetters(string const &str) {
     return regex_match(str, regex("^[A-Za-z]+$"));

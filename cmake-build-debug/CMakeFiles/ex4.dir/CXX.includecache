@@ -6,29 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Barfight.cpp
-Barfight.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Barfight.h
-
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Barfight.h
 Card.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
 
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.cpp
-BattleCard.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.h
-../utilities.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
-
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.h
 Card.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
-
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.cpp
-Card.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
-../utilities.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
 
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
 string
@@ -38,57 +22,29 @@ C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
 ../utilities.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
 
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Dragon.cpp
-Dragon.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Dragon.h
-
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Dragon.h
 BattleCard.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.h
-
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.cpp
-Fairy.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.h
 
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.h
 Card.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
 
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.cpp
-Goblin.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.h
-
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.h
 BattleCard.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.h
 
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Merchant.cpp
-Merchant.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Merchant.h
-
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Merchant.h
 Card.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
-
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Pitfall.cpp
-Pitfall.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Pitfall.h
 
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Pitfall.h
 Card.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
 
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Treasure.cpp
-Treasure.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Treasure.h
-
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Treasure.h
 Card.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
-
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.cpp
-Vampire.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h
 
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h
 BattleCard.h
@@ -162,12 +118,6 @@ C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Fighter.h
 Player.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
 
-C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.cpp
-Player.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
-../utilities.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
-
 C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
 cstring
 -
@@ -181,64 +131,6 @@ C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Wizard.h
 Player.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
-
-C:/Users/User/CLionProjects/mtmEx4/ex4/test.cpp
-functional
--
-string
--
-iostream
--
-vector
--
-memory
--
-Players/Player.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
-Cards/Card.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
-Mtmchkin.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Mtmchkin.h
-Cards/Vampire.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h
-Cards/Barfight.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Barfight.h
-Cards/Dragon.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Dragon.h
-Cards/Fairy.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.h
-Cards/Goblin.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.h
-Cards/Merchant.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Merchant.h
-Cards/Pitfall.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Pitfall.h
-Cards/Treasure.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Treasure.h
-Players/Rogue.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Rogue.h
-Players/Wizard.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Wizard.h
-Players/Fighter.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Fighter.h
-Exception.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.h
-algorithm
--
-sstream
--
-random
--
-cstdio
--
-fstream
--
-cstring
--
-
-C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.cpp
-utilities.h
-C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
 
 C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
 iostream

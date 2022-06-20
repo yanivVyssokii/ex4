@@ -9,7 +9,7 @@
 #include "Players/Player.h"
 #include "Cards/Card.h"
 
-using namespace std;
+
 
 class Mtmchkin{
 
@@ -22,7 +22,7 @@ public:
     * @return
     *      A new instance of Mtmchkin.
     */
-    Mtmchkin(const string fileName);
+    Mtmchkin(const std::string fileName);
 
     /*
     * Play the next Round of the game - according to the instruction in the exercise document.
@@ -58,10 +58,10 @@ public:
     int getNumberOfRounds() const;
 
 private:
-    deque<unique_ptr<Player>> m_players;
-    deque<unique_ptr<Player>> m_wonPlayers;
-    deque<unique_ptr<Player>> m_lostPlayers;
-    deque<unique_ptr<Card>> m_cards;
+    std::deque<std::unique_ptr<Player>> m_players;
+    std::deque<std::unique_ptr<Player>> m_wonPlayers;
+    std::deque<std::unique_ptr<Player>> m_lostPlayers;
+    std::deque<std::unique_ptr<Card>> m_cards;
     int m_roundNumber;
     int m_amountOfPlayers;
 };
