@@ -3,8 +3,6 @@
 //
 
 #include "Dragon.h"
-Dragon::Dragon() : BattleCard(CardType::Battle, 25, std::numeric_limits<int>::max(), 1000)
-{
-    m_name.assign("Dragon");
-}
+Dragon::Dragon() : BattleCard(CardType::Battle,"Dragon", 25, std::numeric_limits<int>::max(), 1000)
+{}
 //

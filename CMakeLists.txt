@@ -6,4 +6,4 @@ add_executable(ex4 main.cpp Players/Player.cpp Players/Player.h Cards/Card.cpp C
         Players/Wizard.h Players/Fighter.cpp Players/Fighter.h Cards/BattleCard.cpp Cards/BattleCard.h Cards/Vampire.cpp Cards/Vampire.h
         Cards/Dragon.cpp Cards/Dragon.h Cards/Pitfall.cpp Cards/Pitfall.h Cards/Fairy.cpp Cards/Fairy.h Cards/Treasure.cpp Cards/Treasure.h Cards/Barfight.cpp
         Cards/Barfight.h Cards/Goblin.h Cards/Goblin.cpp Cards/Merchant.cpp Cards/Merchant.h Exception.cpp Exception.h utilities.h utilities.cpp
-        Mtmchkin.cpp Mtmchkin.h)
+        Mtmchkin.cpp Mtmchkin.h test.cpp)

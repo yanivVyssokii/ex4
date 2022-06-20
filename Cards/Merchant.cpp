@@ -3,10 +3,8 @@
 //
 
 #include "Merchant.h"
-Merchant::Merchant(): Card(CardType::Merchant), m_HpPrice(5),m_ForcePrice(10)
-{
-    m_name.assign("Merchant");
-}
+Merchant::Merchant(): Card(CardType::Merchant,"Merchant"), m_HpPrice(5),m_ForcePrice(10)
+{}
 
 void Merchant::applyEncounter(Player &player) const {
     printMerchantInitialMessageForInteractiveEncounter(std::cout,player.getName(),player.getCoins());

@@ -5,8 +5,9 @@
 #include "Card.h"
 #include "../utilities.h"
 
-Card::Card(CardType type):
-        m_type(type)
+Card::Card(CardType type, std::string name):
+        m_type(type),
+        m_name(name)
 {}
 
 std::ostream &operator<<(std::ostream &os, const Card &c) {

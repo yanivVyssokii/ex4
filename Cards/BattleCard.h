@@ -9,7 +9,7 @@
 
 class BattleCard: public Card{
 public:
-    BattleCard(CardType type, int force, int damage, int loot);
+    BattleCard(CardType type, std::string name, int force, int damage, int loot);
     void applyEncounter (Player&player) const override;
 
 protected:

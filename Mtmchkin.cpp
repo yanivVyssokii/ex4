@@ -61,7 +61,7 @@ void insertNumberOfPlayers(int& numOfPlayers){
     }
 }
 
-void insertPlayers(int numOfPlayers, std::deque<std::shared_ptr<Player>>& players){
+void insertPlayers(int numOfPlayers, std::deque<std::unique_ptr<Player>>& players){
     typedef Player* (*constructorFunction)(std::string,std::string,int,int);
     std::map<std::string, constructorFunction> constructorsMap;
     constructorsMap["Rogue"]=&RogueFactory;
@@ -85,7 +85,7 @@ void insertPlayers(int numOfPlayers, std::deque<std::shared_ptr<Player>>& player
             i--;
         }
         else {
-            players.push_back(std::shared_ptr<Player>(constructorsMap[job](name, job, 100, 5)));
+            players.push_back(std::unique_ptr<Player>(constructorsMap[job](name, job, 100, 5)));
         }
 
 
@@ -93,7 +93,7 @@ void insertPlayers(int numOfPlayers, std::deque<std::shared_ptr<Player>>& player
     }
 }
 
-void insertCards(std::deque<std::shared_ptr<Card>>& card, const std::string fileName){
+void insertCards(std::deque<std::unique_ptr<Card>>& card, const std::string fileName){
     std::ifstream source(fileName);
     if (!source) {
         throw(DeckFileNotFound());
@@ -103,31 +103,31 @@ void insertCards(std::deque<std::shared_ptr<Card>>& card, const std::string file
     while (std::getline(source, line)) {
         if(line == "Merchant"){
             Merchant m;
-            card.push_back(std::shared_ptr<Card>(&m));
+            card.push_back(std::unique_ptr<Card>(&m));
         }
         else if(line == "Dragon"){
             Dragon d;
-            card.push_back(std::shared_ptr<Card>(&d));
+            card.push_back(std::unique_ptr<Card>(&d));
         }
         else if(line == "Fairy"){
             Fairy f;
-            card.push_back(std::shared_ptr<Card>(&f));
+            card.push_back(std::unique_ptr<Card>(&f));
         }
         else if(line == "Goblin"){
             Goblin g;
-            card.push_back(std::shared_ptr<Card>(&g));
+            card.push_back(std::unique_ptr<Card>(&g));
         }
         else if(line == "Pitfall"){
            Pitfall p;
-            card.push_back(std::shared_ptr<Card>(&p));
+            card.push_back(std::unique_ptr<Card>(&p));
         }
         else if(line == "Treasure"){
             Treasure t;
-            card.push_back(std::shared_ptr<Card>(&t));
+            card.push_back(std::unique_ptr<Card>(&t));
         }
         else if(line == "Vampire"){
             Vampire v;
-            card.push_back(std::shared_ptr<Card>(&v));
+            card.push_back(std::unique_ptr<Card>(&v));
         }
         else{
             throw(DeckFileFormatError(currentLine));
@@ -153,32 +153,36 @@ Mtmchkin::Mtmchkin(const std::string fileName): m_roundNumber(1) {
 void Mtmchkin::playRound() {
     printRoundStartMessage(m_roundNumber);
 
-    int playerNum=0;
-    for (const std::shared_ptr<Player>& player:m_players) {
-        std::shared_ptr<Card> currentCard = m_cards.front();
-        m_cards.pop_front();
-
+    int size=m_amountOfPlayers;
+    for (int i=0; i<size; i++) {
+        printTurnStartMessage(m_players.front()->getName());
         //make the move
-        currentCard->applyEncounter(*player);
+        m_cards.front()->applyEncounter(*(m_players.front()));
 
         //push back the card:
-        m_cards.push_back(currentCard);
+        m_cards.push_back(std::move(m_cards.front()));
+        m_cards.pop_front();
 
         //check if the player is dead and if so delete him from the player deque and add to the losers
-        if (player->isKnockedOut()){
-            m_players.erase(m_players.begin()+playerNum);
-            m_lostPlayers.push_front(player);
+        if (m_players.front()->isKnockedOut()){
+            m_lostPlayers.push_front(std::move(m_players.front()));
+            m_players.erase(m_players.begin());
+            size--;
+            m_amountOfPlayers--;
         }
 
         //check if the player won and if so delete him from the player deque and add to the winners
-        else if (player->getLevel()==10){
-            m_players.erase(m_players.begin()+playerNum);
-            m_wonPlayers.push_back(player);
+        else if (m_players.front()->getLevel()==10){
+            m_wonPlayers.push_front(std::move(m_players.front()));
+            m_players.erase(m_players.begin());
+            size--;
+            m_amountOfPlayers--;
         }
 
         //if the player is still alive and hasn't won move to the next player
         else {
-            playerNum++;
+            m_players.push_back(std::move(m_players.front()));
+            m_players.pop_front();
         }
     }
 
@@ -192,15 +196,15 @@ void Mtmchkin::playRound() {
 void Mtmchkin::printLeaderBoard() const {
     int rank=1;
     printLeaderBoardStartMessage();
-    for (const std::shared_ptr<Player>& player:m_wonPlayers) {
+    for (const std::unique_ptr<Player>& player:m_wonPlayers) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
-    for (const std::shared_ptr<Player>& player:m_players) {
+    for (const std::unique_ptr<Player>& player:m_players) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
-    for (const std::shared_ptr<Player>& player:m_lostPlayers) {
+    for (const std::unique_ptr<Player>& player:m_lostPlayers) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }

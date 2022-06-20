@@ -20,7 +20,7 @@ enum class CardType {Battle, Merchant, Pitfall, Treasure, Barfight, Fairy}; // T
 
 class Card {
 public:
-    Card(CardType type);
+    Card(CardType type,std::string name);
     Card(const Card&) = default;
     ~Card() = default;
     virtual void applyEncounter(Player& player) const = 0;

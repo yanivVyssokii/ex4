@@ -46,10 +46,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\idanh\CLionProjects\EX4\ex4
+CMAKE_SOURCE_DIR = C:\Users\User\CLionProjects\mtmEx4\ex4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,9 +76,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\CMakeFiles C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\idanh\CLionProjects\EX4\ex4\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\mtmEx4\ex4\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -526,6 +526,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\main.cpp.s
 .PHONY : main.cpp.s
 
+test.obj: test.cpp.obj
+.PHONY : test.obj
+
+# target to build an object file
+test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\test.cpp.obj
+.PHONY : test.cpp.obj
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ex4.dir\test.cpp.s
+.PHONY : test.cpp.s
+
 utilities.obj: utilities.cpp.obj
 .PHONY : utilities.obj
 
@@ -610,6 +634,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 	@echo ... utilities.obj
 	@echo ... utilities.i
 	@echo ... utilities.s

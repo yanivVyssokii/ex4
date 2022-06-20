@@ -5,14 +5,14 @@
 #include "BattleCard.h"
 #include "../utilities.h"
 
-BattleCard::BattleCard(CardType type, int force, int damage, int loot):
-        Card(type),
+BattleCard::BattleCard(CardType type, std::string name, int force, int damage, int loot):
+        Card(type,name),
         m_force(force),
         m_damage(damage),
         m_loot(loot)
 {}
 
-void BattleCard::applyEncounter (Player&player) const {
+void BattleCard::applyEncounter (Player& player) const {
     if(player.getAttackStrength()>=m_force)
     {
         player.buff(1);
