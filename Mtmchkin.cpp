@@ -102,32 +102,25 @@ void insertCards(std::deque<std::unique_ptr<Card>>& card, const std::string file
     int currentLine=1;
     while (std::getline(source, line)) {
         if(line == "Merchant"){
-            Merchant m;
-            card.push_back(std::unique_ptr<Card>(&m));
+            card.push_back(std::unique_ptr<Card>(new Merchant()));
         }
         else if(line == "Dragon"){
-            Dragon d;
-            card.push_back(std::unique_ptr<Card>(&d));
+            card.push_back(std::unique_ptr<Card>(new Dragon()));
         }
         else if(line == "Fairy"){
-            Fairy f;
-            card.push_back(std::unique_ptr<Card>(&f));
+            card.push_back(std::unique_ptr<Card>(new Fairy()));
         }
         else if(line == "Goblin"){
-            Goblin g;
-            card.push_back(std::unique_ptr<Card>(&g));
+            card.push_back(std::unique_ptr<Card>(new Goblin()));
         }
         else if(line == "Pitfall"){
-           Pitfall p;
-            card.push_back(std::unique_ptr<Card>(&p));
+            card.push_back(std::unique_ptr<Card>(new Pitfall()));
         }
         else if(line == "Treasure"){
-            Treasure t;
-            card.push_back(std::unique_ptr<Card>(&t));
+            card.push_back(std::unique_ptr<Card>(new Treasure()));
         }
         else if(line == "Vampire"){
-            Vampire v;
-            card.push_back(std::unique_ptr<Card>(&v));
+            card.push_back(std::unique_ptr<Card>(new Vampire()));
         }
         else{
             throw(DeckFileFormatError(currentLine));
@@ -156,32 +149,32 @@ void Mtmchkin::playRound() {
     int size=m_amountOfPlayers;
     for (int i=0; i<size; i++) {
         printTurnStartMessage(m_players.front()->getName());
+        std::unique_ptr<Card> currentCard= std::move(m_cards.front());
+        m_cards.pop_front();
+        std::unique_ptr<Player> currentPlayer= std::move(m_players.front());
+        m_players.pop_front();
         //make the move
-        m_cards.front()->applyEncounter(*m_players.front());
+        std::cout<<currentPlayer<<std::endl;
+        currentCard->applyEncounter(*currentPlayer);
 //
         //push back the card:
-        m_cards.push_back(std::move(m_cards.front()));
-        m_cards.pop_front();
+        m_cards.push_back(std::move(currentCard));
 
         //check if the player is dead and if so delete him from the player deque and add to the losers
-        if (m_players.front()->isKnockedOut()){
-            m_lostPlayers.push_front(std::move(m_players.front()));
-            m_players.erase(m_players.begin());
-            size--;
+        if (currentPlayer->isKnockedOut()){
+            m_lostPlayers.push_front(std::move(currentPlayer));
             m_amountOfPlayers--;
         }
 
         //check if the player won and if so delete him from the player deque and add to the winners
-        else if (m_players.front()->getLevel()==10){
-            m_wonPlayers.push_front(std::move(m_players.front()));
-            m_players.erase(m_players.begin());
-            size--;
+        else if (currentPlayer->getLevel()==10){
+            m_wonPlayers.push_front(std::move(currentPlayer));
             m_amountOfPlayers--;
         }
 
         //if the player is still alive and hasn't won move to the next player
         else {
-            m_players.push_back(std::move(m_players.front()));
+            m_players.push_back(std::move(currentPlayer));
             m_players.pop_front();
         }
     }
