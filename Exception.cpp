@@ -5,7 +5,7 @@
 #include "Exception.h"
 #include <string>
 
-DeckFileNotFound::DeckFileNotFound(): std::invalid_argument("Deck File Error: File not found")
+DeckFileNotFound::DeckFileNotFound(): std::exception("Deck File Error: File not found")
 {}
 
 const char *DeckFileNotFound::what() const {
@@ -13,7 +13,7 @@ const char *DeckFileNotFound::what() const {
 }
 
 
-DeckFileInvalidSize::DeckFileInvalidSize(): std::length_error("Deck File Error: Deck size is invalid")
+DeckFileInvalidSize::DeckFileInvalidSize(): std::exception("Deck File Error: Deck size is invalid")
 {}
 
 const char *DeckFileInvalidSize::what() const {
