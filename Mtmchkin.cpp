@@ -145,44 +145,44 @@ void insertCards(std::deque<std::unique_ptr<Card>>& card, const std::string file
 
 Mtmchkin::Mtmchkin(const std::string fileName): m_roundNumber(0) {
     printStartGameMessage();
-    insertNumberOfPlayers(m_amountOfPlayers);
-    insertPlayers(m_amountOfPlayers,m_players);
-    insertCards(m_cards, fileName);
+    insertNumberOfPlayers(this->m_amountOfPlayers);
+    insertPlayers(this->m_amountOfPlayers,this->m_players);
+    insertCards(this->m_cards, fileName);
 
 
 }
 
 void Mtmchkin::playRound() {
-    printRoundStartMessage(m_roundNumber+1);
+    printRoundStartMessage(this->m_roundNumber+1);
 
-    int size=m_amountOfPlayers;
+    int size=this->m_amountOfPlayers;
     for (int i=0; i<size; i++) {
-        printTurnStartMessage(m_players.front()->getName());
-        std::unique_ptr<Card> currentCard= std::move(m_cards.front());
-        m_cards.pop_front();
-        std::unique_ptr<Player> currentPlayer= std::move(m_players.front());
-        m_players.pop_front();
+        printTurnStartMessage(this->m_players.front()->getName());
+        std::unique_ptr<Card> currentCard= std::move(this->m_cards.front());
+        this->m_cards.pop_front();
+        std::unique_ptr<Player> currentPlayer= std::move(this->m_players.front());
+        this->m_players.pop_front();
         //make the move
         currentCard->applyEncounter(*currentPlayer);
 //
         //push back the card:
-        m_cards.push_back(std::move(currentCard));
+        this->m_cards.push_back(std::move(currentCard));
 
         //check if the player is dead and if so delete him from the player deque and add to the losers
         if (currentPlayer->isKnockedOut()){
-            m_lostPlayers.push_front(std::move(currentPlayer));
-            m_amountOfPlayers--;
+            this->m_lostPlayers.push_front(std::move(currentPlayer));
+            this->m_amountOfPlayers--;
         }
 
         //check if the player won and if so delete him from the player deque and add to the winners
         else if (currentPlayer->getLevel()==10){
-            m_wonPlayers.push_back(std::move(currentPlayer));
-            m_amountOfPlayers--;
+            this->m_wonPlayers.push_back(std::move(currentPlayer));
+            this->m_amountOfPlayers--;
         }
 
         //if the player is still alive and hasn't won move to the next player
         else {
-            m_players.push_back(std::move(currentPlayer));
+            this->m_players.push_back(std::move(currentPlayer));
         }
     }
 
@@ -190,31 +190,31 @@ void Mtmchkin::playRound() {
         printGameEndMessage();
     }
 
-    m_roundNumber++;
+    this->m_roundNumber++;
 }
 
 void Mtmchkin::printLeaderBoard() const {
     int rank=1;
     printLeaderBoardStartMessage();
-    for (const std::unique_ptr<Player>& player:m_wonPlayers) {
+    for (const std::unique_ptr<Player>& player:this->m_wonPlayers) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
-    for (const std::unique_ptr<Player>& player:m_players) {
+    for (const std::unique_ptr<Player>& player:this->m_players) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
-    for (const std::unique_ptr<Player>& player:m_lostPlayers) {
+    for (const std::unique_ptr<Player>& player:this->m_lostPlayers) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
 }
 
 bool Mtmchkin::isGameOver() const {
-    return m_players.empty();
+    return this->m_players.empty();
 }
 
 int Mtmchkin::getNumberOfRounds() const {
-    return m_roundNumber;
+    return this->m_roundNumber;
 }
 
