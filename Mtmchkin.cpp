@@ -26,30 +26,32 @@
 #include "Players/Wizard.h"
 #include "Players/Fighter.h"
 
-bool containsOnlyLetters(std::string const &str) {
-    return std::regex_match(str, std::regex("^[A-Za-z]+$"));
+using namespace std;
+
+bool containsOnlyLetters(string const &str) {
+    return regex_match(str, regex("^[A-Za-z]+$"));
 }
 
-Player* RogueFactory(std::string name){
+Player* RogueFactory(string name){
     return new Rogue(name);
 }
 
-Player* WizardFactory(std::string name){
+Player* WizardFactory(string name){
     return new Wizard(name);
 }
 
-Player* FighterFactory(std::string name){
+Player* FighterFactory(string name){
     return new Fighter(name);
 }
 
 void insertNumberOfPlayers(int& numOfPlayers){
     printEnterTeamSizeMessage();
-    std::string input;
+    string input;
     bool success = false;
     while(!success) {
         try {
-            std::getline(std::cin,input);
-            numOfPlayers= std::stoi(input);
+            getline(cin,input);
+            numOfPlayers= stoi(input);
             if (numOfPlayers<2||numOfPlayers>6){
                 printInvalidTeamSize();
                 continue;
@@ -61,9 +63,9 @@ void insertNumberOfPlayers(int& numOfPlayers){
     }
 }
 
-void insertPlayers(int numOfPlayers, std::deque<std::unique_ptr<Player>>& players){
-    typedef Player* (*constructorFunction)(std::string);
-    std::map<std::string, constructorFunction> constructorsMap;
+void insertPlayers(int numOfPlayers, deque<unique_ptr<Player>>& players){
+    typedef Player* (*constructorFunction)(string);
+    map<string, constructorFunction> constructorsMap;
     constructorsMap["Rogue"]=&RogueFactory;
     constructorsMap["Wizard"]=&WizardFactory;
     constructorsMap["Fighter"]=&FighterFactory;
@@ -73,10 +75,10 @@ void insertPlayers(int numOfPlayers, std::deque<std::unique_ptr<Player>>& player
         if (success) {
             printInsertPlayerMessage();
         }
-        std::string line, name, job;
-        std::getline(std::cin,line);
-        std::istringstream lineToSplit(line);
-        std::vector<std::string> results(std::istream_iterator<std::string>{lineToSplit},std::istream_iterator<std::string>());
+        string line, name, job;
+        getline(cin,line);
+        istringstream lineToSplit(line);
+        vector<string> results(istream_iterator<string>{lineToSplit},istream_iterator<string>());
         name=results[0];
         job=results[1];
         if (!containsOnlyLetters(name)){
@@ -90,7 +92,7 @@ void insertPlayers(int numOfPlayers, std::deque<std::unique_ptr<Player>>& player
             i--;
         }
         else {
-            players.push_back(std::unique_ptr<Player>(constructorsMap[job](name)));
+            players.push_back(unique_ptr<Player>(constructorsMap[job](name)));
             success=true;
         }
 
@@ -99,37 +101,37 @@ void insertPlayers(int numOfPlayers, std::deque<std::unique_ptr<Player>>& player
     }
 }
 
-void insertCards(std::deque<std::unique_ptr<Card>>& card, const std::string fileName){
-    std::ifstream source(fileName);
+void insertCards(deque<unique_ptr<Card>>& card, const string fileName){
+    ifstream source(fileName);
     if (!source) {
         throw(DeckFileNotFound());
     }
-    std::string line,cardName;
+    string line,cardName;
     int currentLine=1;
-    while (std::getline(source, line)) {
+    while (getline(source, line)) {
         if(line == "Merchant"){
-            card.push_back(std::unique_ptr<Card>(new Merchant()));
+            card.push_back(unique_ptr<Card>(new Merchant()));
         }
         else if(line == "Dragon"){
-            card.push_back(std::unique_ptr<Card>(new Dragon()));
+            card.push_back(unique_ptr<Card>(new Dragon()));
         }
         else if(line == "Fairy"){
-            card.push_back(std::unique_ptr<Card>(new Fairy()));
+            card.push_back(unique_ptr<Card>(new Fairy()));
         }
         else if(line == "Goblin"){
-            card.push_back(std::unique_ptr<Card>(new Goblin()));
+            card.push_back(unique_ptr<Card>(new Goblin()));
         }
         else if(line == "Pitfall"){
-            card.push_back(std::unique_ptr<Card>(new Pitfall()));
+            card.push_back(unique_ptr<Card>(new Pitfall()));
         }
         else if(line == "Treasure"){
-            card.push_back(std::unique_ptr<Card>(new Treasure()));
+            card.push_back(unique_ptr<Card>(new Treasure()));
         }
         else if(line == "Vampire"){
-            card.push_back(std::unique_ptr<Card>(new Vampire()));
+            card.push_back(unique_ptr<Card>(new Vampire()));
         }
         else if(line == "Barfight"){
-            card.push_back(std::unique_ptr<Card>(new Barfight()));
+            card.push_back(unique_ptr<Card>(new Barfight()));
         }
         else{
             throw(DeckFileFormatError(currentLine));
@@ -143,7 +145,7 @@ void insertCards(std::deque<std::unique_ptr<Card>>& card, const std::string file
 
 }
 
-Mtmchkin::Mtmchkin(const std::string fileName): m_roundNumber(0) {
+Mtmchkin::Mtmchkin(const string fileName): m_roundNumber(0) {
     printStartGameMessage();
     insertNumberOfPlayers(this->m_amountOfPlayers);
     insertPlayers(this->m_amountOfPlayers,this->m_players);
@@ -158,31 +160,31 @@ void Mtmchkin::playRound() {
     int size=this->m_amountOfPlayers;
     for (int i=0; i<size; i++) {
         printTurnStartMessage(this->m_players.front()->getName());
-        std::unique_ptr<Card> currentCard= std::move(this->m_cards.front());
+        unique_ptr<Card> currentCard= move(this->m_cards.front());
         this->m_cards.pop_front();
-        std::unique_ptr<Player> currentPlayer= std::move(this->m_players.front());
+        unique_ptr<Player> currentPlayer= move(this->m_players.front());
         this->m_players.pop_front();
         //make the move
         currentCard->applyEncounter(*currentPlayer);
 //
         //push back the card:
-        this->m_cards.push_back(std::move(currentCard));
+        this->m_cards.push_back(move(currentCard));
 
         //check if the player is dead and if so delete him from the player deque and add to the losers
         if (currentPlayer->isKnockedOut()){
-            this->m_lostPlayers.push_front(std::move(currentPlayer));
+            this->m_lostPlayers.push_front(move(currentPlayer));
             this->m_amountOfPlayers--;
         }
 
         //check if the player won and if so delete him from the player deque and add to the winners
         else if (currentPlayer->getLevel()==10){
-            this->m_wonPlayers.push_back(std::move(currentPlayer));
+            this->m_wonPlayers.push_back(move(currentPlayer));
             this->m_amountOfPlayers--;
         }
 
         //if the player is still alive and hasn't won move to the next player
         else {
-            this->m_players.push_back(std::move(currentPlayer));
+            this->m_players.push_back(move(currentPlayer));
         }
     }
 
@@ -196,15 +198,15 @@ void Mtmchkin::playRound() {
 void Mtmchkin::printLeaderBoard() const {
     int rank=1;
     printLeaderBoardStartMessage();
-    for (const std::unique_ptr<Player>& player:this->m_wonPlayers) {
+    for (const unique_ptr<Player>& player:this->m_wonPlayers) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
-    for (const std::unique_ptr<Player>& player:this->m_players) {
+    for (const unique_ptr<Player>& player:this->m_players) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
-    for (const std::unique_ptr<Player>& player:this->m_lostPlayers) {
+    for (const unique_ptr<Player>& player:this->m_lostPlayers) {
         printPlayerLeaderBoard(rank,*player);
         rank++;
     }
