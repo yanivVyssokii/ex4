@@ -1,18 +1,16 @@
 //
 // Created by User on 6/17/2022.
 //
-
+#include "Exception.h"
 #include "Mtmchkin.h"
 #include "Players/Rogue.h"
 #include "Players/Wizard.h"
 #include "Players/Fighter.h"
 #include <string>
 #include <vector>
-#include "utilities.h"
 #include <map>
 #include <regex>
 #include "fstream"
-#include "Exception.h"
 //Cards includes//
 #include "Cards/Vampire.h"
 #include "Cards/Barfight.h"
@@ -137,7 +135,7 @@ void insertCards(deque<unique_ptr<Card>>& card, const string fileName){
             card.push_back(unique_ptr<Card>(new Barfight()));
         }
         else{
-            throw(DeckFileFormatError(currentLine));
+            throw DeckFileFormatError(currentLine);
         }
         currentLine++;
     }
@@ -149,10 +147,10 @@ void insertCards(deque<unique_ptr<Card>>& card, const string fileName){
 }
 
 Mtmchkin::Mtmchkin(const string fileName): m_roundNumber(0) {
+    insertCards(this->m_cards, fileName);
     printStartGameMessage();
     insertNumberOfPlayers(this->m_amountOfPlayers);
     insertPlayers(this->m_amountOfPlayers,this->m_players);
-    insertCards(this->m_cards, fileName);
 
 
 }

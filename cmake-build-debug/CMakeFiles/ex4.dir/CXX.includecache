@@ -55,11 +55,15 @@ exception
 -
 iostream
 -
+sstream
+-
 string
 -
 
 C:/Users/User/CLionProjects/mtmEx4/ex4/Mtmchkin.h
 string
+-
+memory
 -
 deque
 -

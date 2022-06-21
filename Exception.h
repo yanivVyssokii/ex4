@@ -7,6 +7,7 @@
 
 #include <exception>
 #include <iostream>
+#include <sstream>
 #include <string>
 
 class DeckFileNotFound: public std::exception{
@@ -27,14 +28,17 @@ public:
 
 class DeckFileFormatError: public std::exception{
 public:
-    explicit DeckFileFormatError(int line):m_line(line)
-    {}
+    explicit DeckFileFormatError(int line)
+    {
+        std::ostringstream o;
+        o << "Deck File Error: File format error in line " << line;
+        m_massage = o.str();
+    }
     const char* what() const noexcept override{
-        std::string massage = std::string("Deck File Error: File format error in line ")+ std::to_string(m_line);
-        return massage.c_str();
+        return m_massage.c_str();
     }
 
 private:
-    int m_line;
+    std::string m_massage;
 };
 #endif //EX4_EXCEPTION_H
