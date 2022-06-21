@@ -153,8 +153,8 @@ void insertCards(deque<unique_ptr<Card>>& card, const string fileName){
 }
 
 Mtmchkin::Mtmchkin(const string fileName): m_roundNumber(0) {
-    insertCards(this->m_cards, fileName);
     printStartGameMessage();
+    insertCards(this->m_cards, fileName);
     insertNumberOfPlayers(this->m_amountOfPlayers);
     insertPlayers(this->m_amountOfPlayers,this->m_players);
 
