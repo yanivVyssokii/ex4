@@ -10,7 +10,7 @@
 #include <vector>
 #include <map>
 #include <fstream>
-#include <istream>
+#include <iterator>
 //Cards includes//
 #include "Cards/Vampire.h"
 #include "Cards/Barfight.h"

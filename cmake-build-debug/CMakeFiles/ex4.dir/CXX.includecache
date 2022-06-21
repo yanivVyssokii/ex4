@@ -79,7 +79,7 @@ map
 -
 fstream
 -
-istream
+iterator
 -
 Cards/Vampire.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h
