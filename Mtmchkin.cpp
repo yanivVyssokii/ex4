@@ -9,7 +9,8 @@
 #include <string>
 #include <vector>
 #include <map>
-#include "fstream"
+#include <fstream>
+#include <istream>
 //Cards includes//
 #include "Cards/Vampire.h"
 #include "Cards/Barfight.h"

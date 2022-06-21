@@ -77,10 +77,10 @@ vector
 -
 map
 -
-regex
--
 fstream
-C:/Users/User/CLionProjects/mtmEx4/ex4/fstream
+-
+istream
+-
 Cards/Vampire.h
 C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h
 Cards/Barfight.h
