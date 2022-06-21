@@ -325,7 +325,6 @@ bool badFormatStartTest()
         Mtmchkin("inputs/badFormat_test_start_of_file.txt");
     }
     catch(const DeckFileFormatError& e){
-        const char* error = e.what();
         if(strcmp(e.what(),"Deck File Error: File format error in line 1")==0)
         {
             flag = true;
