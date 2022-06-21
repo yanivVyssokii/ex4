@@ -24,6 +24,7 @@
 #include "Players/Fighter.h"
 
 using std::unique_ptr;
+using std::istream_iterator;
 using namespace std;
 
 
