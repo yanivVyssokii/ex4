@@ -9,7 +9,6 @@
 #include <string>
 #include <vector>
 #include <map>
-#include <regex>
 #include "fstream"
 //Cards includes//
 #include "Cards/Vampire.h"
@@ -29,7 +28,12 @@ using namespace std;
 
 
 bool containsOnlyLetters(string const &str) {
-    return regex_match(str, regex("^[A-Za-z]+$"));
+    for(char letter: str){
+        if (!(('a'<=letter&&letter<='z')||('A'<=letter&&letter<='Z'))){
+            return false;
+        }
+    }
+    return true;
 }
 
 Player* RogueFactory(string name){
