@@ -128,7 +128,23 @@ CMakeFiles\ex4.dir\test.cpp.obj: ..\Players\Wizard.h
 CMakeFiles\ex4.dir\test.cpp.obj: ..\test.cpp
 CMakeFiles\ex4.dir\test.cpp.obj: ..\utilities.h
 
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Barfight.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\BattleCard.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Card.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Dragon.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Fairy.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Goblin.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Merchant.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Pitfall.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Treasure.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Vampire.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Exception.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Players\Fighter.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Players\Player.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Players\Rogue.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Players\Wizard.h
 CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\tool\main.cpp
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\utilities.h
 
 CMakeFiles\ex4.dir\utilities.cpp.obj: ..\Exception.h
 CMakeFiles\ex4.dir\utilities.cpp.obj: ..\Players\Player.h
