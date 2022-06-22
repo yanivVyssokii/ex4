@@ -11,6 +11,8 @@ class BattleCard: public Card{
 public:
     BattleCard(CardType type, std::string name, int force, int damage, int loot);
     void applyEncounter (Player&player) const override;
+    void applyEncounterWithoutPrints (Player&player) const;
+    friend class Gang;
 
 protected:
     int m_force;

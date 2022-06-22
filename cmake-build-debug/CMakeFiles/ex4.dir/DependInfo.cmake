@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Card.cpp.obj"
   "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Dragon.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Dragon.cpp.obj"
   "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Fairy.cpp.obj"
+  "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Gang.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Gang.cpp.obj"
   "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj"
   "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Merchant.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Merchant.cpp.obj"
   "C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Pitfall.cpp" "C:/Users/User/CLionProjects/mtmEx4/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Cards/Pitfall.cpp.obj"

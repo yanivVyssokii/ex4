@@ -1,0 +1,56 @@
+//
+// Created by User on 6/22/2022.
+//
+
+#include "Gang.h"
+#include "Goblin.h"
+#include "Dragon.h"
+#include "Vampire.h"
+#include <map>
+
+BattleCard* GoblinFactory(){
+    return new Goblin();
+}
+
+BattleCard* DragonFactory(){
+    return new Dragon();
+}
+
+BattleCard* VampireFactory(){
+    return new Vampire();
+}
+
+Gang::Gang(): Card(CardType::Gang,"Gang")
+{}
+
+void Gang::applyEncounter(Player &player) const {
+    bool lost = false;
+    int initialLevel = player.getLevel();
+    for (const unique_ptr<BattleCard>& battleCard: m_gangMembers){
+        if (!lost) {
+            int hp = player.getHP();
+            battleCard->applyEncounterWithoutPrints(player);
+            if (hp > player.getHP()) { //lost
+                lost = true;
+            }
+        }
+        else{ //lost already
+            player.damage(battleCard->m_damage);
+            if (battleCard->m_name=="Vampire"){
+                player.buff(-1);
+            }
+        }
+    }
+    if (!lost){
+        player.setLevel(initialLevel+1);
+    }
+}
+
+void Gang::addMember(const string& battleCardName) {
+    typedef BattleCard* (*constructorFunction)();
+    map<string, constructorFunction> constructorsMap;
+    constructorsMap["Goblin"]=&GoblinFactory;
+    constructorsMap["Dragon"]=&DragonFactory;
+    constructorsMap["Vampire"]=&VampireFactory;
+    m_gangMembers.push_back(unique_ptr<BattleCard>(constructorsMap[battleCardName]()));
+}

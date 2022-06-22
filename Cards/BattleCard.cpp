@@ -27,3 +27,17 @@ void BattleCard::applyEncounter (Player& player) const {
         printLossBattle(player.getName(),m_name);
     }
 }
+
+void BattleCard::applyEncounterWithoutPrints(Player &player) const {
+    if(player.getAttackStrength()>=m_force)
+    {
+        player.levelUp();
+        player.addCoins(m_loot);
+    }
+    else{
+        player.damage(m_damage);
+        if (m_name=="Vampire"&&player.getForce()>0){
+            player.buff(-1);
+        }
+    }
+}

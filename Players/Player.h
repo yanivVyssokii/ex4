@@ -14,12 +14,13 @@ public:
     Player& operator=(const Player& player);
     friend std::ostream& operator<<(std::ostream& os, const Player& p);
     ~Player();
-    void printInfo() const;
     void levelUp();
+    void setLevel(int newLevel);
     std::string getJob() const;
     int getLevel() const;
     int getCoins() const;
     int getForce() const;
+    int getHP() const;
     std::string getName() const;
     void buff(int extraForce);
     virtual void heal(int extraHP);

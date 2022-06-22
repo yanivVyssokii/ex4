@@ -132,4 +132,12 @@ int Player::getCoins() const {
 int Player::getForce() const {
     return m_force;
 }
+
+int Player::getHP() const {
+    return m_HP;
+}
+
+void Player::setLevel(int newLevel) {
+    m_level = newLevel;
+}
 //std::ostream &os, const std::string &name, const std::string &job, int level, int force, int HP, int coins);
