@@ -36,6 +36,17 @@ CMakeFiles\ex4.dir\Cards\Fairy.cpp.obj: ..\Exception.h
 CMakeFiles\ex4.dir\Cards\Fairy.cpp.obj: ..\Players\Player.h
 CMakeFiles\ex4.dir\Cards\Fairy.cpp.obj: ..\utilities.h
 
+CMakeFiles\ex4.dir\Cards\Gang.cpp.obj: ..\Cards\BattleCard.h
+CMakeFiles\ex4.dir\Cards\Gang.cpp.obj: ..\Cards\Card.h
+CMakeFiles\ex4.dir\Cards\Gang.cpp.obj: ..\Cards\Dragon.h
+CMakeFiles\ex4.dir\Cards\Gang.cpp.obj: ..\Cards\Gang.cpp
+CMakeFiles\ex4.dir\Cards\Gang.cpp.obj: ..\Cards\Gang.h
+CMakeFiles\ex4.dir\Cards\Gang.cpp.obj: ..\Cards\Goblin.h
+CMakeFiles\ex4.dir\Cards\Gang.cpp.obj: ..\Cards\Vampire.h
+CMakeFiles\ex4.dir\Cards\Gang.cpp.obj: ..\Exception.h
+CMakeFiles\ex4.dir\Cards\Gang.cpp.obj: ..\Players\Player.h
+CMakeFiles\ex4.dir\Cards\Gang.cpp.obj: ..\utilities.h
+
 CMakeFiles\ex4.dir\Cards\Goblin.cpp.obj: ..\Cards\BattleCard.h
 CMakeFiles\ex4.dir\Cards\Goblin.cpp.obj: ..\Cards\Card.h
 CMakeFiles\ex4.dir\Cards\Goblin.cpp.obj: ..\Cards\Goblin.cpp
@@ -78,6 +89,7 @@ CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Cards\BattleCard.h
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Cards\Card.h
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Cards\Dragon.h
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Cards\Fairy.h
+CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Cards\Gang.h
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Cards\Goblin.h
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Cards\Merchant.h
 CMakeFiles\ex4.dir\Mtmchkin.cpp.obj: ..\Cards\Pitfall.h
@@ -139,6 +151,7 @@ CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Pitfall.h
 CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Treasure.h
 CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Cards\Vampire.h
 CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Exception.h
+CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Mtmchkin.h
 CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Players\Fighter.h
 CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Players\Player.h
 CMakeFiles\ex4.dir\tool\main.cpp.obj: ..\Players\Rogue.h

@@ -13,7 +13,7 @@ using namespace std;
 class Gang: public Card{
 public:
     explicit Gang();
-    void addMember(const string& battleCardName);
+    void addMember(const string& battleCardName) override;
     void applyEncounter (Player&player) const override;
 private:
     deque<unique_ptr<BattleCard>> m_gangMembers;

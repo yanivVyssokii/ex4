@@ -24,6 +24,7 @@ public:
     Card(const Card&) = default;
     ~Card() = default;
     virtual void applyEncounter(Player& player) const = 0;
+    virtual void addMember(const std::string& battleCardName);
 
     friend std::ostream& operator<<(std::ostream& os, const Card& c);
     Card& operator=(const Card& other) = default;

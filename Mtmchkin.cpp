@@ -20,6 +20,7 @@
 #include "Cards/Merchant.h"
 #include "Cards/Pitfall.h"
 #include "Cards/Treasure.h"
+#include "Cards/Gang.h"
 #include "Players/Rogue.h"
 #include "Players/Wizard.h"
 #include "Players/Fighter.h"
@@ -115,37 +116,44 @@ void insertCards(deque<unique_ptr<Card>>& card, const string fileName){
     }
     string line,cardName;
     int currentLine=1;
+    bool gangAppend = false;
     while (getline(source, line)) {
-        if(line == "Merchant"){
-            card.push_back(unique_ptr<Card>(new Merchant()));
-        }
-        else if(line == "Dragon"){
-            card.push_back(unique_ptr<Card>(new Dragon()));
-        }
-        else if(line == "Fairy"){
-            card.push_back(unique_ptr<Card>(new Fairy()));
-        }
-        else if(line == "Goblin"){
-            card.push_back(unique_ptr<Card>(new Goblin()));
-        }
-        else if(line == "Pitfall"){
-            card.push_back(unique_ptr<Card>(new Pitfall()));
-        }
-        else if(line == "Treasure"){
-            card.push_back(unique_ptr<Card>(new Treasure()));
-        }
-        else if(line == "Vampire"){
-            card.push_back(unique_ptr<Card>(new Vampire()));
-        }
-        else if(line == "Barfight"){
-            card.push_back(unique_ptr<Card>(new Barfight()));
+        if (!gangAppend) {
+            if (line == "Merchant") {
+                card.push_back(unique_ptr<Card>(new Merchant()));
+            } else if (line == "Dragon") {
+                card.push_back(unique_ptr<Card>(new Dragon()));
+            } else if (line == "Fairy") {
+                card.push_back(unique_ptr<Card>(new Fairy()));
+            } else if (line == "Goblin") {
+                card.push_back(unique_ptr<Card>(new Goblin()));
+            } else if (line == "Pitfall") {
+                card.push_back(unique_ptr<Card>(new Pitfall()));
+            } else if (line == "Treasure") {
+                card.push_back(unique_ptr<Card>(new Treasure()));
+            } else if (line == "Vampire") {
+                card.push_back(unique_ptr<Card>(new Vampire()));
+            } else if (line == "Barfight") {
+                card.push_back(unique_ptr<Card>(new Barfight()));
+            } else if (line == "Gang"){
+                card.push_back(unique_ptr<Card>(new Gang()));
+                gangAppend = true;
+            } else {
+                throw DeckFileFormatError(currentLine);
+            }
         }
         else{
-            throw DeckFileFormatError(currentLine);
+            if (line == "Dragon" || line == "Goblin" || line == "Vampire") {
+                card.back()->addMember(line);
+            } else if (line == "EndGang"){
+                gangAppend = false;
+            } else {
+                throw DeckFileFormatError(currentLine);
+            }
         }
         currentLine++;
     }
-    if(currentLine<5){
+    if(currentLine<5||gangAppend){
         throw(DeckFileInvalidSize());
     }
 

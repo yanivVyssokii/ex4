@@ -30,19 +30,25 @@ void Gang::applyEncounter(Player &player) const {
         if (!lost) {
             int hp = player.getHP();
             battleCard->applyEncounterWithoutPrints(player);
-            if (hp > player.getHP()) { //lost
+            if (hp > player.getHP()) {
+                printLossBattle(player.getName(),battleCard->m_name);//lost
                 lost = true;
             }
         }
         else{ //lost already
             player.damage(battleCard->m_damage);
+            printLossBattle(player.getName(),battleCard->m_name);
             if (battleCard->m_name=="Vampire"){
                 player.buff(-1);
             }
         }
     }
     if (!lost){
+        printWinBattle(player.getName(),"Gang");
         player.setLevel(initialLevel+1);
+    }
+    if (lost){
+        player.setLevel(initialLevel);
     }
 }
 

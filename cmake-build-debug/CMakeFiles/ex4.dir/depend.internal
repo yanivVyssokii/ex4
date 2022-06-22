@@ -36,6 +36,17 @@ CMakeFiles/ex4.dir/Cards/Fairy.cpp.obj
  C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
+CMakeFiles/ex4.dir/Cards/Gang.cpp.obj
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.h
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Dragon.h
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Gang.cpp
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Gang.h
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.h
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.h
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
+ C:/Users/User/CLionProjects/mtmEx4/ex4/utilities.h
 CMakeFiles/ex4.dir/Cards/Goblin.cpp.obj
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/BattleCard.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
@@ -79,6 +90,7 @@ CMakeFiles/ex4.dir/Mtmchkin.cpp.obj
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Card.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Dragon.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Fairy.h
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Gang.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Goblin.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Merchant.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Pitfall.h
@@ -140,6 +152,7 @@ CMakeFiles/ex4.dir/tool/main.cpp.obj
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Treasure.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Cards/Vampire.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Exception.h
+ C:/Users/User/CLionProjects/mtmEx4/ex4/Mtmchkin.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Fighter.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Player.h
  C:/Users/User/CLionProjects/mtmEx4/ex4/Players/Rogue.h
