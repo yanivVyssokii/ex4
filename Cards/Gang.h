@@ -13,7 +13,9 @@ using namespace std;
 class Gang: public Card{
 public:
     explicit Gang();
-    ~Gang();
+    Gang(const Gang& gang);
+    Gang& operator=(const Gang& gang);
+    ~Gang() override;
     void addMember(const string& battleCardName) override;
     void applyEncounter (Player&player) const override;
 private:

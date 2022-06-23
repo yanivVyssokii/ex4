@@ -62,3 +62,20 @@ void Gang::addMember(const string& battleCardName) {
 }
 
 Gang::~Gang() {}
+
+Gang::Gang(const Gang &gang): Card(CardType::Gang,"Gang") {
+    for (const unique_ptr<BattleCard>& battleCard: gang.m_gangMembers){
+        this->addMember(battleCard->m_name);
+    }
+}
+
+Gang &Gang::operator=(const Gang &gang) {
+    if (this == &gang){
+        return *this;
+    }
+    m_gangMembers.erase(m_gangMembers.begin(),m_gangMembers.end());
+    for (const unique_ptr<BattleCard>& battleCard: gang.m_gangMembers){
+        this->addMember(battleCard->m_name);
+    }
+    return *this;
+}
