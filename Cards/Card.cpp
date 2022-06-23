@@ -37,6 +37,9 @@ std::ostream &operator<<(std::ostream &os, const Card &c) {
     return os;
 }
 
-void Card::addMember(const std::string &battleCardName) {}//do nothing if the card isn't gang
+void Card::addMember(const std::string &battleCardName) {}
+
+Card::~Card() = default;
+//do nothing if the card isn't gang
 
 

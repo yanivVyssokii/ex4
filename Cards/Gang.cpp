@@ -60,3 +60,5 @@ void Gang::addMember(const string& battleCardName) {
     constructorsMap["Vampire"]=&VampireFactory;
     m_gangMembers.push_back(unique_ptr<BattleCard>(constructorsMap[battleCardName]()));
 }
+
+Gang::~Gang() {}

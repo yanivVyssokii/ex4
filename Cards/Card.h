@@ -22,7 +22,7 @@ class Card {
 public:
     Card(CardType type,std::string name);
     Card(const Card&) = default;
-    ~Card() = default;
+    virtual ~Card();
     virtual void applyEncounter(Player& player) const = 0;
     virtual void addMember(const std::string& battleCardName);
 
